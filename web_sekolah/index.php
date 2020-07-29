@@ -2,7 +2,7 @@
 require_once 'koneksi.php';
 
 $query = mysqli_query($koneksi, "SELECT judul, isi, tgla, foto FROM tbl_berita LIMIT 4");
-$query1 = mysqli_query($koneksi, "SELECT judul, isi, tgla, foto FROM tbl_berita LIMIT 4");
+$query1 = mysqli_query($koneksi, "SELECT nama, pendidikan, foto FROM tbl_guru LIMIT 4");
 ?>
 <!DOCTYPE html>
 <html lang="en-US" dir="ltr">
@@ -178,7 +178,7 @@ $query1 = mysqli_query($koneksi, "SELECT judul, isi, tgla, foto FROM tbl_berita 
             <?php while($row = mysqli_fetch_assoc($query)) : ?>
               <div class="col-3 col-sm-4 col-md-2 col-lg-3" align="center">
               
-                <div class="post-thumbnail"><a href="#"><img src="images/berita/<?= $row['foto'] ?>" alt="Blog-post Thumbnail" width="300px" height="100px"/></a></div>
+                <div class="post-thumbnail"><a href="#"><img src="images/berita/<?= $row['foto'] ?>" alt="Blog-post Thumbnail" width="250px" height="100px"/></a></div>
                 <h2 class="post-title"><a href="#"><?= $row['judul'] ?></a></h2>
                 <div class="post-meta"><?= $row['tgla'] ?></div>
               </div>
@@ -196,22 +196,55 @@ $query1 = mysqli_query($koneksi, "SELECT judul, isi, tgla, foto FROM tbl_berita 
            
         </section>
       <!-- End Berita -->
-
-        <!--presentation-->
-        <!--
-        <section class="module bg-dark-60" data-background="assets/images/section-6.jpg">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="video-box">
-                  <div class="video-box-icon"><a class="video-pop-up" href="https://www.youtube.com/watch?v=TTxZj3DZiIM"><span class="icon-video"></span></a></div>
-                  <div class="video-title font-alt">Presentation</div>
-                  <div class="video-subtitle font-alt">Watch the video about our new products</div>
-                </div>
+        
+      <!-- presentation-->
+      <section class="module bg-dark-60" data-background="assets/images/section-6.jpg">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="video-box">
+                <div class="video-box-icon"><a class="video-pop-up" href="https://www.youtube.com/watch?v=TTxZj3DZiIM"><span class="icon-video"></span></a></div>
+                <div class="video-title font-alt">Presentation</div>
+                <div class="video-subtitle font-alt">Watch the video about our new products</div>
               </div>
             </div>
           </div>
-        </section> -->
+        </div>
+      </section>
+
+      <!-- Guru -->
+      <section class="module" id="news">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <h2 class="module-title font-alt">Guru</h2></div>
+            </div>
+          </div>
+
+        <div class="container-fluid" >
+        <div class="row multi-columns-row post-columns">
+            <?php while($row1 = mysqli_fetch_assoc($query1)) : ?>
+              <div class="col-3 col-sm-4 col-md-2 col-lg-3" align="center">
+              
+                <div class="post-thumbnail"><a href="#"><img src="images/guru/<?= $row1['foto'] ?>" alt="Blog-post Thumbnail" width="150px" height="50px"/></a></div>
+                <h2 class="post-title"><a href="#"><?= $row1['nama'] ?></a></h2>
+                <div class="post-meta"><?= $row1['pendidikan'] ?></div>
+              </div>
+              
+            <?php endwhile; ?>
+                                   
+          </div>
+          <div class="container-fluid">
+          <div class="row multi-columns-row post-columns ">
+
+          <div class="post-more" align="center"><button><a class="more-link" href="#">Read more</a></button></div>
+          
+              </div>
+              </div>
+           
+        </section>
+      <!-- End Guru -->
+
       
       <!--Start Footer-->
       <hr class="divider-w">
