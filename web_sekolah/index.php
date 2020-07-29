@@ -83,7 +83,7 @@ $query1 = mysqli_query($koneksi, "SELECT nama, pendidikan, foto FROM tbl_guru LI
               </li>
               <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">GURU</a>
                 <ul class="dropdown-menu">
-                  <li><a href="#">Data Pendidik</a></li>
+                  <li><a href="DataPendidik.php">Data Pendidik</a></li>
                   <li><a href="#">Silabus & RPP</a></li>
                 </ul>
               </li>
@@ -106,7 +106,7 @@ $query1 = mysqli_query($koneksi, "SELECT nama, pendidikan, foto FROM tbl_guru LI
           </div>
         </div>
       </nav>
-      <section class="home-section home-full-height bg-dark-30" id="home" data-background="assets/images/section-5.jpg">
+      <section class="home-section home-full-height bg-dark-30" id="home" data-background="assets/images/dobak.png">
         <div class="video-player" data-property="{videoURL:'#', containment:'.home-section', startAt:18, mute:false, autoPlay:true, loop:true, opacity:1, showControls:false, showYTLogo:false, vol:25}"></div>
         <div class="video-controls-box">
           <div class="container">

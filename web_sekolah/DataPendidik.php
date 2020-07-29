@@ -1,3 +1,7 @@
+<?php 
+require_once 'koneksi.php';
+$query = mysqli_query($koneksi, "SELECT nama, pendidikan, foto FROM tbl_guru LIMIT 8");
+?>
 <!DOCTYPE html>
 <html lang="en-US" dir="ltr">
   <head>
@@ -103,42 +107,31 @@
           </div>
         </section>
         
-        <section class="module">
+        <section class="module" id="guru">
           <div class="container">
             <div class="row">
               <div class="col-sm-6 col-sm-offset-3">
                 <h2 class="module-title font-alt">DATA PENDIDIK <br> SD NEGERI KEPUTRAN 06</h2>
               </div>
             </div>
-            <div class="row multi-columns-row">
-              <div class="col-sm-6 col-md-3 col-lg-3">
-                <div class="price-table font-alt">
-                  <h4>-- coming soon --</h4>
-                  <div class="borderline"></div>
-                  <!-- <p class="price"><span>$</span>9 -->
-                  </p>
-                  <ul class="price-details">
-                    <li>-- coming soon --</li>
-                    <li>-- coming soon --</li>
-                    <li><span>-- coming soon --</span></li>
-                  </ul><a class="btn btn-d btn-round" href="#">CEK DATA</a>
+            <div class="container-fluid" >
+              <div class="row multi-columns-row post-columns">
+                  <?php while($row = mysqli_fetch_assoc($query)) : ?>
+                    <div class="col-3 col-sm-4 col-md-2 col-lg-3" align="center">
+                    
+                      <div class="post-thumbnail"><a href="#"><img src="images/guru/<?= $row['foto'] ?>" alt="Blog-post Thumbnail" width="150px" height="50px"/></a></div>
+                      <h2 class="post-title"><a href="#"><?= $row['nama'] ?></a></h2>
+                      <div class="post-meta"><?= $row['pendidikan'] ?></div>
+                    </div>
+                    
+                  <?php endwhile; ?>
+                                        
                 </div>
-              </div>
-              <div class="col-sm-6 col-md-3 col-lg-3">
-                <div class="price-table font-alt best">
-                  <h4>Advanced</h4>
-                  <p class="small">-- coming soon --</p>
-                  <div class="borderline"></div>
-                  <!-- <p class="price"><span>$</span>64 -->
-                  </p>
-                  <ul class="price-details">
-                    <li>-- coming soon --</li>
-                    <li>-- coming soon --</li>
-                    <li><span>-- coming soon --</span></li>
-                  </ul><a class="btn btn-d btn-round" href="#">CEK DATA</a>
-                </div>
-              </div>
-            </div>
+                <div class="container-fluid">
+                <div class="row multi-columns-row post-columns ">
+                
+                    </div>
+                    </div>
             <!-- <div class="row mt-40">
               <div class="col-sm-6 col-sm-offset-3 align-center">
                 <p>Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators. To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words.</p>
