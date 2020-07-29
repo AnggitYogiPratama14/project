@@ -1,7 +1,8 @@
 <?php 
 require_once 'koneksi.php';
 
-$query = mysqli_query($koneksi, "SELECT id, judul, isi, tgla, foto FROM tbl_berita");
+$query = mysqli_query($koneksi, "SELECT judul, isi, tgla, foto FROM tbl_berita LIMIT 4");
+$query1 = mysqli_query($koneksi, "SELECT judul, isi, tgla, foto FROM tbl_berita LIMIT 4");
 ?>
 <!DOCTYPE html>
 <html lang="en-US" dir="ltr">
@@ -168,40 +169,31 @@ $query = mysqli_query($koneksi, "SELECT id, judul, isi, tgla, foto FROM tbl_beri
           <div class="container-fluid">
             <div class="row">
               <div class="col-sm-6 col-sm-offset-3">
-                <h2 class="module-title font-alt">Latest blog posts</h2></div>
+                <h2 class="module-title font-alt">Berita</h2></div>
             </div>
           </div>
 
-          <div class="container-fluid">
-          <div class="row multi-columns-row post-columns ">
-              <?php while($row = mysqli_fetch_assoc($query)) : ?>
-                <div class="col-sm-6 col-lg-4">
-                
-                  <div class="post-thumbnail"><a href="#"><img src="images/berita/<?= $row['foto'] ?>" alt="Blog-post Thumbnail"/></a></div>
-                
-                   
-                  </div>
-                  <?php endwhile; ?>
+        <div class="container-fluid" >
+        <div class="row multi-columns-row post-columns">
+            <?php while($row = mysqli_fetch_assoc($query)) : ?>
+              <div class="col-3 col-sm-4 col-md-2 col-lg-3" align="center">
+              
+                <div class="post-thumbnail"><a href="#"><img src="images/berita/<?= $row['foto'] ?>" alt="Blog-post Thumbnail" width="300px" height="100px"/></a></div>
+                <h2 class="post-title"><a href="#"><?= $row['judul'] ?></a></h2>
+                <div class="post-meta"><?= $row['tgla'] ?></div>
+              </div>
+              
+            <?php endwhile; ?>
                                    
           </div>
           <div class="container-fluid">
           <div class="row multi-columns-row post-columns ">
 
-          <div class="post-more"><a class="more-link" href="#">Read more</a></div>
-              </div>
-              </div>
-           
-           
-              
-
-                 
-           
-            
-                
-              
-            
-
+          <div class="post-more" align="center"><button><a class="more-link" href="#">Read more</a></button></div>
           
+              </div>
+              </div>
+           
         </section>
       <!-- End Berita -->
 
