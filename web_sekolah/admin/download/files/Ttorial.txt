@@ -1,0 +1,2 @@
+buka drive C -> masuk ke folder XAMPP -> masuk ke Folder htdoc -> masuk Folder angkatan ->
+masuk ke folder HTML -> masuk folder tag -> masuk folder list -> pilih file / select file -> open with chorme
