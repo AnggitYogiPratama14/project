@@ -1,3 +1,8 @@
+<?php 
+require_once 'koneksi.php';
+
+$query1 = mysqli_query($koneksi, "SELECT judul, isi, tgla, tmpt, wkt, foto FROM tbl_agenda");
+?>
 <!DOCTYPE html>
 <html lang="en-US" dir="ltr">
   <head>
@@ -66,26 +71,26 @@
           <div class="collapse navbar-collapse" id="custom-collapse">
             <ul class="nav navbar-nav navbar-right">
                 <!--Awal Header-->
-              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">PROFIL</a>
+                <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">PROFIL</a>
                 <ul class="dropdown-menu">
                   <li><a href="SambutanKepsek.php">Sambutan Kepala Sekolah</a></li>
                   <li><a href="VisiMisi.php">Visi & Misi</a></li>
-                  <li><a href="DataPendidik.php">Data Pendidik</a></li>
-                  <li><a href="#">Galeri</a></li>
+                  <li><a href="sejarah.php">Sejarah</a></li>
+                  <!-- <li><a href="DataPendidik.php">Data Pendidik</a></li> -->
                 </ul>
               </li>
+              <li><a href="DataPendidik.php">Data Pendidik</a></li>
               <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">INFORMASI</a>
                 <ul class="dropdown-menu">
                   <li><a href="Agenda.php">Agenda</a></li>
                   <li><a href="Pengumuman.php">Pengumuman</a></li>
-                  <li><a href="#">Covid-19</a></li>
-                  <li><a href="#">Prestasi</a></li>
+                  <li><a href="https://corona.pekalongankota.go.id/">Covid-19</a></li>
                 </ul>
               </li>
-              <li><a href="Ekstrakurikuler.php">EKSTRAKURIKULER</a></li>
-              <li><a href="#">BERITA</a></li>
-              <li><a href="#">PPDB 2020</a></li>
-              <li><a href="#">HUBUNGI KAMI</a></li>
+              <li><a href="berita.php">BERITA</a></li>
+              <li><a href="artikel.php">ARTIKEL</a></li>
+              <li><a href="download.php">DOWNLOAD</a></li>
+              <li><a href="hubungi.php">HUBUNGI KAMI</a></li>
               <!-- Akhir Header -->
               
             </ul>
@@ -103,7 +108,7 @@
           </div>
         </section>
         
-        <section class="module">
+        <section class="module" id="news">
           <div class="container">
             <div class="row">
               <div class="col-sm-6 col-sm-offset-3">
@@ -112,6 +117,29 @@
             </div>
             
             <!-- Edit Data -->
+            <div class="container-fluid" >
+            <div class="row multi-columns-row post-columns">
+                <?php while($row1 = mysqli_fetch_assoc($query1)) : ?>
+                  <div class="col-lg-6 col-md-3" align="center">
+                  
+                    <div class="post-thumbnail"><a href="#"><img src="images/agenda/<?= $row1['foto'] ?>" alt="Blog-post Thumbnail" width="300px" height="150px"/></a></div>
+                    <h2 class="post-title"><a href="#"><?= $row1['judul'] ?></a></h2>
+                    <div class="post-meta"><?= $row1['tgla'] ?></div>
+                  </div>
+                  <div>
+                    
+                  </div>
+                <?php endwhile; ?>
+                                      
+              </div>
+              <div class="container-fluid">
+              <div class="row multi-columns-row post-columns ">
+
+              <!-- <div class="post-more" align="center"><button><a class="more-link" href="#">Read more</a></button></div> -->
+              
+                  </div>
+                  </div>
+
 
             <!-- <div class="row mt-40">
               <div class="col-sm-6 col-sm-offset-3 align-center">

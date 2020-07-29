@@ -8,7 +8,7 @@
     Document Title
     =============================================
     -->
-    <title>EKSTRAKURIKULER</title>
+    <title>SEJARAH</title>
     <!--  
     Favicons
     =============================================
@@ -66,26 +66,26 @@
           <div class="collapse navbar-collapse" id="custom-collapse">
             <ul class="nav navbar-nav navbar-right">
                 <!--Awal Header-->
-              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">PROFIL</a>
+                <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">PROFIL</a>
                 <ul class="dropdown-menu">
                   <li><a href="SambutanKepsek.php">Sambutan Kepala Sekolah</a></li>
                   <li><a href="VisiMisi.php">Visi & Misi</a></li>
-                  <li><a href="DataPendidik.php">Data Pendidik</a></li>
-                  <li><a href="#">Galeri</a></li>
+                  <li><a href="sejarah.php">Sejarah</a></li>
+                  <!-- <li><a href="DataPendidik.php">Data Pendidik</a></li> -->
                 </ul>
               </li>
+              <li><a href="DataPendidik.php">Data Pendidik</a></li>
               <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">INFORMASI</a>
                 <ul class="dropdown-menu">
                   <li><a href="Agenda.php">Agenda</a></li>
-                  <li><a href="#">Pengumuman</a></li>
-                  <li><a href="#">Covid-19</a></li>
-                  <li><a href="#">Prestasi</a></li>
+                  <li><a href="Pengumuman.php">Pengumuman</a></li>
+                  <li><a href="https://corona.pekalongankota.go.id/">Covid-19</a></li>
                 </ul>
               </li>
-              <li><a href="Ekstrakurikuler.php">EKSTRAKURIKULER</a></li>
-              <li><a href="#">BERITA</a></li>
-              <li><a href="#">PPDB 2020</a></li>
-              <li><a href="#">HUBUNGI KAMI</a></li>
+              <li><a href="berita.php">BERITA</a></li>
+              <li><a href="artikel.php">ARTIKEL</a></li>
+              <li><a href="download.php">DOWNLOAD</a></li>
+              <li><a href="hubungi.php">HUBUNGI KAMI</a></li>
               <!-- Akhir Header -->
               
             </ul>
@@ -97,40 +97,32 @@
           <div class="container">
             <div class="row">
               <div class="col-sm-6 col-sm-offset-3">
-                <h2 class="module-title font-alt">EKSTRAKURIKULER</h2>
+                <h2 class="module-title font-alt">SEJARAH</h2>
               </div>
             </div>
           </div>
         </section>
         
-        <!--Awal Code-->
-        
-        <section class="module">
+        <section class="module" id="news">
           <div class="container">
             <div class="row">
-              <div class="col-sm-8 col-sm-offset-2">
-                <h4 class="font-alt mb-0">EKSTRAKURIKULER</h4>
-                <hr class="divider-w mt-10 mb-20">
-                <div role="tabpanel">
-                  <ul class="nav nav-tabs font-alt" role="tablist">
-                    <li class="active"><a href="#pramuka" data-toggle="tab"><span class="icon-telescope"></span>PRAMUKA</a></li>
-                    <li><a href="#pmr" data-toggle="tab"><span class="icon-pencil"></span>PMR</a></li>
-                    <!-- <li><a href="#rebana" data-toggle="tab"><span class="icon-tools-2"></span>REBANA</a></li> -->
-                  </ul>
-                  <div class="tab-content">
-                    <div class="tab-pane active" id="pramuka">Coming Soon
-                    </div>
-                    <div class="tab-pane" id="pmr">Coming Soon 2
-                    </div>
-                    <div class="tab-pane" id="rebana">The World In Your Hands.
-                    </div>
-                  </div>
-                </div> <hr>
+              <div class="col-sm-6 col-sm-offset-3">
+                <h2 class="module-title font-alt">SEJARAH <br> SD NEGERI KEPUTRAN 06</h2>
               </div>
             </div>
+            
+            <!-- Edit Data -->
+            
+
+
+            <!-- <div class="row mt-40">
+              <div class="col-sm-6 col-sm-offset-3 align-center">
+                <p>Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators. To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words.</p>
+              </div> 
+            </div>-->
           </div>
         </section>
-
+        
       <!--Start Footer-->
       <hr class="divider-w">
         <div class="module-small bg-dark">

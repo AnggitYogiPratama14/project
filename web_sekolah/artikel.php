@@ -1,3 +1,8 @@
+<?php 
+require_once 'koneksi.php';
+
+$query1 = mysqli_query($koneksi, "SELECT judul, isi, tanggal, foto FROM tbl_artikel");
+?>
 <!DOCTYPE html>
 <html lang="en-US" dir="ltr">
   <head>
@@ -8,7 +13,7 @@
     Document Title
     =============================================
     -->
-    <title>VISI MISI</title>
+    <title>ARTIKEL</title>
     <!--  
     Favicons
     =============================================
@@ -97,27 +102,50 @@
           <div class="container">
             <div class="row">
               <div class="col-sm-6 col-sm-offset-3">
-                <h2 class="module-title font-alt">VISI & MISI</h2>
+                <h2 class="module-title font-alt">ARTIKEL</h2>
               </div>
             </div>
           </div>
         </section>
-        <section class="module">
+        
+        <section class="module" id="news">
           <div class="container">
             <div class="row">
-              <div class="col-sm-6">
-                <h3 class="font-alt">VISI & MISI SD NEGERI KEPUTRAN 06</h3><br>
-                <h5 class="font-alt">Visi SD NEGERI KEPUTRAN 06</h5><br>
-                <p style="text-align: justify; background-attachment:responsive;"> -- COMING SOON -- </p>
-                <h5 class="font-alt">Misi SD NEGERI KEPUTRAN 06</h5> <br>
-                <p style="text-align: justify; background-attachment:responsive;"> -- COMING SOON -- </p> 
+              <div class="col-sm-6 col-sm-offset-3">
+                <h2 class="module-title font-alt">ARTIKEL <br> SD NEGERI KEPUTRAN 06</h2>
               </div>
-
-              <div class="col-sm-6">
-                <img src="images/smayani.png" width="200" height="200" style="display: grid; margin: auto;">
-              </div>
-
             </div>
+            
+            <!-- Edit Data -->
+            <div class="container-fluid" >
+            <div class="row multi-columns-row post-columns">
+                <?php while($row1 = mysqli_fetch_assoc($query1)) : ?>
+                  <div class="col-lg-6 col-md-3" align="center">
+                  
+                    <div class="post-thumbnail"><a href="#"><img src="images/artikel/<?= $row1['foto'] ?>" alt="Blog-post Thumbnail" width="300px" height="150px"/></a></div>
+                    <h2 class="post-title"><a href="#"><?= $row1['judul'] ?></a></h2>
+                    <div class="post-meta"><?= $row1['tanggal'] ?></div>
+                  </div>
+                  <div>
+                    
+                  </div>
+                <?php endwhile; ?>
+                                      
+              </div>
+              <div class="container-fluid">
+              <div class="row multi-columns-row post-columns ">
+
+              <!-- <div class="post-more" align="center"><button><a class="more-link" href="#">Read more</a></button></div> -->
+              
+                  </div>
+                  </div>
+
+
+            <!-- <div class="row mt-40">
+              <div class="col-sm-6 col-sm-offset-3 align-center">
+                <p>Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators. To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words.</p>
+              </div> 
+            </div>-->
           </div>
         </section>
         

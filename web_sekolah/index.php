@@ -68,7 +68,7 @@ $query1 = mysqli_query($koneksi, "SELECT nama, pendidikan, foto FROM tbl_guru LI
       <nav class="navbar navbar-custom navbar-fixed-top navbar-transparent" role="navigation">
         <div class="container">
           <div class="navbar-header">
-            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="index.php"></a>
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="index.php"><img src="assets/images/favicons/png.png"></a>
           </div>
           <div class="collapse navbar-collapse" id="custom-collapse">
             <ul class="nav navbar-nav navbar-right">
@@ -77,36 +77,28 @@ $query1 = mysqli_query($koneksi, "SELECT nama, pendidikan, foto FROM tbl_guru LI
                 <ul class="dropdown-menu">
                   <li><a href="SambutanKepsek.php">Sambutan Kepala Sekolah</a></li>
                   <li><a href="VisiMisi.php">Visi & Misi</a></li>
-                  <li><a href="#">Sejarah</a></li>
+                  <li><a href="sejarah.php">Sejarah</a></li>
                   <!-- <li><a href="DataPendidik.php">Data Pendidik</a></li> -->
                 </ul>
               </li>
-              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">GURU</a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Data Pendidik</a></li>
-                  <li><a href="#">Silabus & RPP</a></li>
-                </ul>
-              </li>
+              <li><a href="DataPendidik.php">Data Pendidik</a></li>
               <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">INFORMASI</a>
                 <ul class="dropdown-menu">
                   <li><a href="Agenda.php">Agenda</a></li>
                   <li><a href="Pengumuman.php">Pengumuman</a></li>
-                  <li><a href="#">Covid-19</a></li>
-                  <li><a href="#">Prestasi</a></li>
-                  <li><a href="#">PPDB</a></li>
+                  <li><a href="https://corona.pekalongankota.go.id/">Covid-19</a></li>
                 </ul>
               </li>
-              <li><a href="Ekstrakurikuler.php">EKSTRAKURIKULER</a></li>
-              <li><a href="#">BERITA</a></li>
-              <li><a href="#">ARTIKEL</a></li>
-              <li><a href="Galeri.php">Galeri</a></li>
-              <li><a href="#">HUBUNGI KAMI</a></li>
+              <li><a href="berita.php">BERITA</a></li>
+              <li><a href="artikel.php">ARTIKEL</a></li>
+              <li><a href="download.php">DOWNLOAD</a></li>
+              <li><a href="hubungi.php">HUBUNGI KAMI</a></li>
               <!-- Akhir Header -->
             </ul>
           </div>
         </div>
       </nav>
-      <section class="home-section home-full-height bg-dark-30" id="home" data-background="assets/images/section-5.jpg">
+      <section class="home-section home-full-height bg-dark-30" id="home" data-background="assets/images/dobak.png">
         <div class="video-player" data-property="{videoURL:'#', containment:'.home-section', startAt:18, mute:false, autoPlay:true, loop:true, opacity:1, showControls:false, showYTLogo:false, vol:25}"></div>
         <div class="video-controls-box">
           <div class="container">
@@ -227,12 +219,12 @@ $query1 = mysqli_query($koneksi, "SELECT nama, pendidikan, foto FROM tbl_guru LI
 
         <div class="container-fluid" >
         <div class="row multi-columns-row post-columns">
-            <?php while($row1 = mysqli_fetch_assoc($query)) : ?>
+            <?php while($row1 = mysqli_fetch_assoc($query1)) : ?>
               <div class="col-3 col-sm-4 col-md-2 col-lg-3" align="center">
               
-                <div class="post-thumbnail"><a href="#"><img src="images/guru/<?= $row['foto'] ?>" alt="Blog-post Thumbnail" width="150px" height="50px"/></a></div>
-                <h2 class="post-title"><a href="#"><?= $row['nama'] ?></a></h2>
-                <div class="post-meta"><?= $row['pendidikan'] ?></div>
+                <div class="post-thumbnail"><a href="#"><img src="images/guru/<?= $row1['foto'] ?>" alt="Blog-post Thumbnail" width="150px" height="50px"/></a></div>
+                <h2 class="post-title"><a href="#"><?= $row1['nama'] ?></a></h2>
+                <div class="post-meta"><?= $row1['pendidikan'] ?></div>
               </div>
               
             <?php endwhile; ?>
@@ -241,7 +233,7 @@ $query1 = mysqli_query($koneksi, "SELECT nama, pendidikan, foto FROM tbl_guru LI
           <div class="container-fluid">
           <div class="row multi-columns-row post-columns ">
 
-          <div class="post-more" align="center"><button><a class="more-link" href="#">Read more</a></button></div>
+          <div class="post-more" align="center"><button><a class="more-link" href="DataPendidik.php">Read more</a></button></div>
           
               </div>
               </div>
