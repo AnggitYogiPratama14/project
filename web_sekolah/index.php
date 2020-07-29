@@ -77,7 +77,7 @@ $query1 = mysqli_query($koneksi, "SELECT nama, pendidikan, foto FROM tbl_guru LI
                 <ul class="dropdown-menu">
                   <li><a href="SambutanKepsek.php">Sambutan Kepala Sekolah</a></li>
                   <li><a href="VisiMisi.php">Visi & Misi</a></li>
-                  <li><a href="#">Sejarah</a></li>
+                  <li><a href="sejarah.php">Sejarah</a></li>
                   <!-- <li><a href="DataPendidik.php">Data Pendidik</a></li> -->
                 </ul>
               </li>
@@ -86,16 +86,13 @@ $query1 = mysqli_query($koneksi, "SELECT nama, pendidikan, foto FROM tbl_guru LI
                 <ul class="dropdown-menu">
                   <li><a href="Agenda.php">Agenda</a></li>
                   <li><a href="Pengumuman.php">Pengumuman</a></li>
-                  <li><a href="#">Covid-19</a></li>
-                  <li><a href="#">Prestasi</a></li>
-                  <li><a href="#">PPDB</a></li>
+                  <li><a href="https://corona.pekalongankota.go.id/">Covid-19</a></li>
                 </ul>
               </li>
-              <li><a href="Ekstrakurikuler.php">EKSTRAKURIKULER</a></li>
-              <li><a href="#">BERITA</a></li>
-              <li><a href="#">ARTIKEL</a></li>
-              <li><a href="Galeri.php">Galeri</a></li>
-              <li><a href="#">HUBUNGI KAMI</a></li>
+              <li><a href="berita.php">BERITA</a></li>
+              <li><a href="artikel.php">ARTIKEL</a></li>
+              <li><a href="download.php">DOWNLOAD</a></li>
+              <li><a href="hubungi.php">HUBUNGI KAMI</a></li>
               <!-- Akhir Header -->
             </ul>
           </div>
@@ -236,7 +233,7 @@ $query1 = mysqli_query($koneksi, "SELECT nama, pendidikan, foto FROM tbl_guru LI
           <div class="container-fluid">
           <div class="row multi-columns-row post-columns ">
 
-          <div class="post-more" align="center"><button><a class="more-link" href="#">Read more</a></button></div>
+          <div class="post-more" align="center"><button><a class="more-link" href="DataPendidik.php">Read more</a></button></div>
           
               </div>
               </div>

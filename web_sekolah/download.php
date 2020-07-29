@@ -1,3 +1,9 @@
+<?php 
+require_once 'koneksi.php';
+
+$query1 = mysqli_query($koneksi, "SELECT file_id, name, file FROM file");
+$no=1;
+?>
 <!DOCTYPE html>
 <html lang="en-US" dir="ltr">
   <head>
@@ -8,7 +14,7 @@
     Document Title
     =============================================
     -->
-    <title>VISI MISI</title>
+    <title>DOWNLOAD</title>
     <!--  
     Favicons
     =============================================
@@ -97,27 +103,47 @@
           <div class="container">
             <div class="row">
               <div class="col-sm-6 col-sm-offset-3">
-                <h2 class="module-title font-alt">VISI & MISI</h2>
+                <h2 class="module-title font-alt">AGENDA</h2>
               </div>
             </div>
           </div>
         </section>
-        <section class="module">
+        
+        <section class="module" id="news">
           <div class="container">
             <div class="row">
-              <div class="col-sm-6">
-                <h3 class="font-alt">VISI & MISI SD NEGERI KEPUTRAN 06</h3><br>
-                <h5 class="font-alt">Visi SD NEGERI KEPUTRAN 06</h5><br>
-                <p style="text-align: justify; background-attachment:responsive;"> -- COMING SOON -- </p>
-                <h5 class="font-alt">Misi SD NEGERI KEPUTRAN 06</h5> <br>
-                <p style="text-align: justify; background-attachment:responsive;"> -- COMING SOON -- </p> 
+              <div class="col-sm-6 col-sm-offset-3">
+                <h2 class="module-title font-alt">DOWNLOAD <br> SD NEGERI KEPUTRAN 06</h2>
               </div>
-
-              <div class="col-sm-6">
-                <img src="images/smayani.png" width="200" height="200" style="display: grid; margin: auto;">
-              </div>
-
             </div>
+            
+            <!-- Edit Data -->
+            <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">Nama</th>
+                <th scope="col">File</th>
+              </tr>
+            </thead>
+            <tbody>
+            <?php while($row = mysqli_fetch_assoc($query1)) : ?>
+              <tr>
+                <th scope="row"><?= $no++ ?></th>
+                <td><?= $row['name'] ?></td>
+                <td></td>
+                <td><a href="admin/download/download.php?file=<?php echo $row[1]?>" class="btn btn-primary"><span class="glyphicon glyphicon-download"></span> Download</a></td>
+              </tr>
+              <?php endwhile; ?>
+            </tbody>
+          </table>
+
+
+            <!-- <div class="row mt-40">
+              <div class="col-sm-6 col-sm-offset-3 align-center">
+                <p>Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators. To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words.</p>
+              </div> 
+            </div>-->
           </div>
         </section>
         
