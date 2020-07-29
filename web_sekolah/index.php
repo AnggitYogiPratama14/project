@@ -81,12 +81,7 @@ $query1 = mysqli_query($koneksi, "SELECT nama, pendidikan, foto FROM tbl_guru LI
                   <!-- <li><a href="DataPendidik.php">Data Pendidik</a></li> -->
                 </ul>
               </li>
-              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">GURU</a>
-                <ul class="dropdown-menu">
-                  <li><a href="DataPendidik.php">Data Pendidik</a></li>
-                  <li><a href="#">Silabus & RPP</a></li>
-                </ul>
-              </li>
+              <li><a href="DataPendidik.php">Data Pendidik</a></li>
               <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">INFORMASI</a>
                 <ul class="dropdown-menu">
                   <li><a href="Agenda.php">Agenda</a></li>
@@ -227,12 +222,12 @@ $query1 = mysqli_query($koneksi, "SELECT nama, pendidikan, foto FROM tbl_guru LI
 
         <div class="container-fluid" >
         <div class="row multi-columns-row post-columns">
-            <?php while($row1 = mysqli_fetch_assoc($query)) : ?>
+            <?php while($row1 = mysqli_fetch_assoc($query1)) : ?>
               <div class="col-3 col-sm-4 col-md-2 col-lg-3" align="center">
               
-                <div class="post-thumbnail"><a href="#"><img src="images/guru/<?= $row['foto'] ?>" alt="Blog-post Thumbnail" width="150px" height="50px"/></a></div>
-                <h2 class="post-title"><a href="#"><?= $row['nama'] ?></a></h2>
-                <div class="post-meta"><?= $row['pendidikan'] ?></div>
+                <div class="post-thumbnail"><a href="#"><img src="images/guru/<?= $row1['foto'] ?>" alt="Blog-post Thumbnail" width="150px" height="50px"/></a></div>
+                <h2 class="post-title"><a href="#"><?= $row1['nama'] ?></a></h2>
+                <div class="post-meta"><?= $row1['pendidikan'] ?></div>
               </div>
               
             <?php endwhile; ?>
