@@ -174,16 +174,20 @@ $query1 = mysqli_query($koneksi, "SELECT nama, pendidikan, foto FROM tbl_guru LI
           </div>
 
         <div class="container-fluid" >
-        <div class="row multi-columns-row post-columns">
-            <?php while($row = mysqli_fetch_assoc($query)) : ?>
-              <div class="col-3 col-sm-4 col-md-2 col-lg-3" align="center">
+        <div class="row">
+        
+        <?php while($row = mysqli_fetch_assoc($query)) : ?>
+              <div class="col-lg-3 col-lg-3 col-lg-3 col-lg-3" align="center">
               
-                <div class="post-thumbnail"><a href="#"><img src="images/berita/<?= $row['foto'] ?>" alt="Blog-post Thumbnail" width="250px" height="100px"/></a></div>
+        
+                <div class="post-thumbnail"><a href="#"><img src="images/berita/<?= $row['foto'] ?>" alt="Blog-post Thumbnail" width="1000px" height="100px"/></a></div>
                 <h2 class="post-title"><a href="#"><?= $row['judul'] ?></a></h2>
                 <div class="post-meta"><?= $row['tgla'] ?></div>
               </div>
               
             <?php endwhile; ?>
+            
+         
                                    
           </div>
           <div class="container-fluid">
@@ -223,12 +227,12 @@ $query1 = mysqli_query($koneksi, "SELECT nama, pendidikan, foto FROM tbl_guru LI
 
         <div class="container-fluid" >
         <div class="row multi-columns-row post-columns">
-            <?php while($row1 = mysqli_fetch_assoc($query1)) : ?>
+            <?php while($row1 = mysqli_fetch_assoc($query)) : ?>
               <div class="col-3 col-sm-4 col-md-2 col-lg-3" align="center">
               
-                <div class="post-thumbnail"><a href="#"><img src="images/guru/<?= $row1['foto'] ?>" alt="Blog-post Thumbnail" width="150px" height="50px"/></a></div>
-                <h2 class="post-title"><a href="#"><?= $row1['nama'] ?></a></h2>
-                <div class="post-meta"><?= $row1['pendidikan'] ?></div>
+                <div class="post-thumbnail"><a href="#"><img src="images/guru/<?= $row['foto'] ?>" alt="Blog-post Thumbnail" width="150px" height="50px"/></a></div>
+                <h2 class="post-title"><a href="#"><?= $row['nama'] ?></a></h2>
+                <div class="post-meta"><?= $row['pendidikan'] ?></div>
               </div>
               
             <?php endwhile; ?>
