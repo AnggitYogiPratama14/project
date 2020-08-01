@@ -1,240 +1,230 @@
 <?php 
 require_once 'koneksi.php';
 
-$query1 = mysqli_query($koneksi, "SELECT judul, isi, tgla, foto FROM tbl_pengumuman");
+$query = mysqli_query($koneksi, "SELECT judul, isi, tgla, foto FROM tbl_pengumuman");
 ?>
 <!DOCTYPE html>
-<html lang="en-US" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--  
-    Document Title
-    =============================================
-    -->
-    <title>PENGUMUMAN</title>
-    <!--  
-    Favicons
-    =============================================
-    -->
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="assets/images/favicons/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <!--  
-    Stylesheets
-    =============================================
-    
-    -->
-    <!-- Default stylesheets-->
-    <link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Template specific stylesheets-->
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Volkhov:400i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-    <link href="assets/lib/animate.css/animate.css" rel="stylesheet">
-    <link href="assets/lib/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="assets/lib/et-line-font/et-line-font.css" rel="stylesheet">
-    <link href="assets/lib/flexslider/flexslider.css" rel="stylesheet">
-    <link href="assets/lib/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="assets/lib/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
-    <link href="assets/lib/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
-    <link href="assets/lib/simple-text-rotator/simpletextrotator.css" rel="stylesheet">
-    <!-- Main stylesheet and color file-->
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link id="color-scheme" href="assets/css/colors/default.css" rel="stylesheet">
-  </head>
-  <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
-    <main>
-      <div class="page-loader">
-        <div class="loader">Loading...</div>
-      </div>
-      <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
-            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="index.php">SDN KEPUTRAN 06</a>
-          </div>
-          <div class="collapse navbar-collapse" id="custom-collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <!--Awal Header-->
-                <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">PROFIL</a>
-                <ul class="dropdown-menu">
-                  <li><a href="SambutanKepsek.php">Sambutan Kepala Sekolah</a></li>
-                  <li><a href="VisiMisi.php">Visi & Misi</a></li>
-                  <li><a href="sejarah.php">Sejarah</a></li>
-                  <!-- <li><a href="DataPendidik.php">Data Pendidik</a></li> -->
-                </ul>
-              </li>
-              <li><a href="DataPendidik.php">Data Pendidik</a></li>
-              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">INFORMASI</a>
-                <ul class="dropdown-menu">
-                  <li><a href="Agenda.php">Agenda</a></li>
-                  <li><a href="Pengumuman.php">Pengumuman</a></li>
-                  <li><a href="https://corona.pekalongankota.go.id/">Covid-19</a></li>
-                </ul>
-              </li>
-              <li><a href="berita.php">BERITA</a></li>
-              <li><a href="artikel.php">ARTIKEL</a></li>
-              <li><a href="download.php">DOWNLOAD</a></li>
-              <li><a href="hubungi.php">HUBUNGI KAMI</a></li>
-              <!-- Akhir Header -->
-              
-            </ul>
-          </div>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>SDN KEPUTRAN 06 PEKALONGAN</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="assets/css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="assets/css/style.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--Main Navigation-->
+  <header>
+
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+      <div class="container">
+
+        <!-- Brand -->
+        <a class="navbar-brand waves-effect" href="index.php" target="_blank">
+          <img src="assets/mp4/png.png" alt="">
+        </a>
+
+        <!-- Collapse -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <!-- Left -->
+          <ul class="navbar-nav mr-auto">
+            <!-- Dropdown PROFIL-->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">PROFIL</a>
+              <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="sambutan.php">SAMBUTAN KEPALA SEKOLAH</a>
+                <a class="dropdown-item" href="sejarah.php">SEJARAH</a>
+                <a class="dropdown-item" href="visimisi.php">VISI - MISI</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dataguru.php">DATA PENDIDIK</a>
+            </li>
+            <!-- Dropdown INFORMASI-->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">INFORMASI</a>
+              <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="agenda.php">AGENDA</a>
+                <a class="dropdown-item" href="pengumuman.php">PENGUMUMAN</a>
+                <a class="dropdown-item" href="https://corona.pekalongankota.go.id/">COVID 19</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="berita.php">BERITA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="artikel.php">ARTIKEL</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="download.php">DOWNLOAD</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="hubungi.php">HUBUNGI KAMI</a>
+            </li>
+          </ul>
+
         </div>
-      </nav>
-      <div class="main">
-        <section class="module bg-dark-60 about-page-header" data-background="assets/images/about_bg.jpg">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-6 col-sm-offset-3">
-                <h2 class="module-title font-alt">PENGUMUMAN</h2>
-              </div>
-            </div>
-          </div>
-        </section>
-        
-        <section class="module">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-6 col-sm-offset-3">
-                <h2 class="module-title font-alt">PENGUMUMAN <br> SD NEGERI KEPUTRAN 06</h2>
-              </div>
-            </div>
-            
-            <!-- Edit Data -->
-            <div class="container-fluid" >
-            <div class="row multi-columns-row post-columns">
-                <?php while($row1 = mysqli_fetch_assoc($query1)) : ?>
-                  <div class="col-lg-6 col-md-3" align="center">
-                  
-                    <div class="post-thumbnail"><a href="#"><img src="images/pengumuman/<?= $row1['foto'] ?>" alt="Blog-post Thumbnail" width="300px" height="150px"/></a></div>
-                    <h2 class="post-title"><a href="#"><?= $row1['judul'] ?></a></h2>
-                    <div class="post-meta"><?= $row1['tgla'] ?></div>
-                  </div>
-                  <div>
-                    
-                  </div>
-                <?php endwhile; ?>
-                                      
-              </div>
-              <div class="container-fluid">
-              <div class="row multi-columns-row post-columns ">
 
-              <!-- <div class="post-more" align="center"><button><a class="more-link" href="#">Read more</a></button></div> -->
-              
-                  </div>
-                  </div>
-
-
-            <!-- <div class="row mt-40">
-              <div class="col-sm-6 col-sm-offset-3 align-center">
-                <p>Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators. To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words.</p>
-              </div> 
-            </div>-->
-          </div>
-        </section>
-        
-      <!--Start Footer-->
-      <hr class="divider-w">
-        <div class="module-small bg-dark">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-3">
-                <div class="widget">
-                  <h5 class="widget-title font-alt">Hubungi Kami</h5>
-                  <p>--coming soon--</p>
-                  <p>Phone: --coming soon--</p>
-                  <p>Email: --coming soon--</p>
-                  <!-- <p>Email:<a href="#">--coming soon--</a></p>-->
-                </div>
-              </div>
-              <div class="col-sm-3">
-                <div class="widget">
-                  <h5 class="widget-title font-alt">JAM PEMBELAJARAN</h5>
-                  <ul class="icon-list">
-                    <li>SENIN <a href="#"> 07.00 - 13.30</a></li>
-                    <li>SELASA<a href="#">07.00 - 13.30</a></li>
-                    <li>RABU   <a href="#">   07.00 - 13.30</a></li>
-                    <li>KAMIS <a href="#"> 07.00 - 13.30</a></li>
-                    <li>JUMAT <a href="#"> 07.00 - 10.30</a></li>
-                    <li>SABTU <a href="#"> 07.00 - 12.30</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-sm-3">
-                <div class="widget">
-                  <h5 class="widget-title font-alt">Kategori</h5>
-                  <ul class="icon-list">
-                    <li><a href="#">Berita</a></li>
-                    <li><a href="#">PPDB 2020</a></li>
-                    <li><a href="#">Agenda</a></li>
-                    <li><a href="#">Pengumuman</a></li>
-                    <li><a href="#">Tenaga Pendidik</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-sm-3">
-                <div class="widget">
-                  <h5 class="widget-title font-alt">MAPS</h5>
-                  <ul class="widget-posts">
-                    <li class="clearfix">
-                      <!-- Elemen yang akan menjadi kontainer peta -->
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.9502177888335!2d109.6760193143671!3d-6.8965580694050646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7024321f4ddfcd%3A0x2f5e37fb128178d0!2sSDN%20KEPUTRAN%2006%20PEKALONGAN!5e0!3m2!1sid!2sid!4v1595303947308!5m2!1sid!2sid" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> <!--End Footer-->
-        <hr class="divider-d">
-        <footer class="footer bg-dark">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-6">
-                <p class="copyright font-alt">&copy; 2020&nbsp;<a href="index.html">TIM IT SMAYANI</a>, All Rights Reserved</p>
-              </div>
-              <div class="col-sm-6">
-                <div class="footer-social-links"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-dribbble"></i></a><a href="#"><i class="fa fa-skype"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </footer>
       </div>
-      <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
-    </main>
-    <!--  
-    JavaScripts
-    =============================================
-    -->
-    <script src="assets/lib/jquery/dist/jquery.js"></script>
-    <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="assets/lib/wow/dist/wow.js"></script>
-    <script src="assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
-    <script src="assets/lib/isotope/dist/isotope.pkgd.js"></script>
-    <script src="assets/lib/imagesloaded/imagesloaded.pkgd.js"></script>
-    <script src="assets/lib/flexslider/jquery.flexslider.js"></script>
-    <script src="assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
-    <script src="assets/lib/smoothscroll.js"></script>
-    <script src="assets/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
-    <script src="assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
-    <script src="assets/js/plugins.js"></script>
-    <script src="assets/js/main.js"></script>
-  </body>
+    </nav>
+    <!-- Navbar -->
+
+  </header>
+  <!--Main Navigation-->
+
+  <!--Main layout-->
+  <main class="mt-5 pt-5">
+    <div class="container">
+
+      <!--Section: Jumbotron-->
+      <section class="card blue-gradient wow fadeIn">
+
+        <!-- Content -->
+        <div class="card-body text-white text-center py-5 px-5 my-5">
+          <img src="assets/mp4/big.png" class="animated bounce infinite" alt="Transparent MDB Logo" id="animated-img1" width="10%">
+          <h1 class="mb-4">
+            <strong>PENGUMUMAN SDN KEPUTRAN 06 PEKALONGAN</strong>
+          </a>
+
+        </div>
+        <!-- Content -->
+      </section>
+      <!--Section: Jumbotron-->
+
+      <section class="pt-4">
+          <br><br>
+          <!-- Heading & Description -->
+          <div class="wow fadeIn">
+              <!--Section heading-->
+              <h2 class="h1 text-center mb-5">PENGUMUMAN</h2>
+          </div>
+
+          <hr class="mb-5">
+
+          <!--Grid row-->
+          <div class="row mt-3 wow fadeIn">
+            <?php while($row = mysqli_fetch_assoc($query)) : ?>
+              
+              <!--Grid column-->
+              <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
+                  <h3 class="mb-3 font-weight-bold dark-grey-text">
+                      <strong><a href="#"><?= $row['judul'] ?></a></strong>
+                  </h3>
+                  <p class="grey-text"><?= $row['tgla'] ?></p>
+                  <a href="https://mdbootstrap.com/education/tech-marketing/automated-app-introduction/" target="_blank" class="btn btn-primary btn-md">Kunjungi
+                      <i class="fas fa-play ml-2"></i>
+                  </a>
+              </div>
+              <!--Grid column-->
+              
+              <!--Grid column-->
+              <div class="col-lg-5 col-xl-4 mb-4">
+                  <!--Featured image-->
+                  <div class="view overlay rounded z-depth-1">
+                      <img src="images/pengumuman/<?= $row['foto'] ?>" class="img-fluid" alt="">
+                      <a href="#" target="_blank">
+                          <div class="mask rgba-white-slight"></div>
+                      </a>
+                  </div>
+              </div>
+              <!--Grid column-->
+            <?php endwhile; ?>
+          </div>
+          <!--Grid row-->
+
+          <hr class="mb-5">
+
+      </section>
+    </div>
+    
+  </main>
+  <!--Main layout-->
+
+  <!--Footer-->
+  <footer class="page-footer text-center font-small mdb-color darken-2 mt-4 wow fadeIn">
+    <hr class="my-4">
+
+    <!-- Social icons -->
+    <div class="pb-4">
+      <a href="https://www.facebook.com/mdbootstrap" target="_blank">
+        <i class="fab fa-facebook-f mr-3"></i>
+      </a>
+
+      <a href="https://twitter.com/MDBootstrap" target="_blank">
+        <i class="fab fa-twitter mr-3"></i>
+      </a>
+
+      <a href="https://www.youtube.com/watch?v=7MUISDJ5ZZ4" target="_blank">
+        <i class="fab fa-youtube mr-3"></i>
+      </a>
+
+      <a href="https://plus.google.com/u/0/b/107863090883699620484" target="_blank">
+        <i class="fab fa-google-plus-g mr-3"></i>
+      </a>
+
+      <a href="https://dribbble.com/mdbootstrap" target="_blank">
+        <i class="fab fa-dribbble mr-3"></i>
+      </a>
+
+      <a href="https://pinterest.com/mdbootstrap" target="_blank">
+        <i class="fab fa-pinterest mr-3"></i>
+      </a>
+
+      <a href="https://github.com/mdbootstrap/bootstrap-material-design" target="_blank">
+        <i class="fab fa-github mr-3"></i>
+      </a>
+
+      <a href="http://codepen.io/mdbootstrap/" target="_blank">
+        <i class="fab fa-codepen mr-3"></i>
+      </a>
+    </div>
+    <!-- Social icons -->
+
+    <!--Copyright-->
+    <div class="footer-copyright py-3">
+      © 2020 Copyright:
+      <a href="#" target="_blank"> TIM IT </a>
+    </div>
+    <!--/.Copyright-->
+
+  </footer>
+  <!--/.Footer-->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="assets/js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="assets/js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="assets/js/mdb.min.js"></script>
+  <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+
+  </script>
+</body>
+
 </html>
