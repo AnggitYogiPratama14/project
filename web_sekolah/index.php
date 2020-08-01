@@ -1,333 +1,387 @@
 <?php 
 require_once 'koneksi.php';
 
-$query = mysqli_query($koneksi, "SELECT judul, isi, tgla, foto FROM tbl_berita LIMIT 4");
+$query = mysqli_query($koneksi, "SELECT judul, isi, tgla, foto FROM tbl_berita LIMIT 3");
 $query1 = mysqli_query($koneksi, "SELECT nama, pendidikan, foto FROM tbl_guru LIMIT 4");
 ?>
 <!DOCTYPE html>
-<html lang="en-US" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--  
-    Document Title
-    =============================================
-    -->
-    <title>SD NEGERI KEPUTRAN 06</title>
-    <!--  
-    Favicons
-    =============================================
-    -->
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="assets/images/favicons/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <!--  
-    Stylesheets
-    =============================================
-    
-    -->
-    <!-- Default stylesheets-->
-    <link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Template specific stylesheets-->
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Volkhov:400i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-    <link href="assets/lib/animate.css/animate.css" rel="stylesheet">
-    <link href="assets/lib/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="assets/lib/et-line-font/et-line-font.css" rel="stylesheet">
-    <link href="assets/lib/flexslider/flexslider.css" rel="stylesheet">
-    <link href="assets/lib/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="assets/lib/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
-    <link href="assets/lib/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
-    <link href="assets/lib/simple-text-rotator/simpletextrotator.css" rel="stylesheet">
-    <!-- Main stylesheet and color file-->
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link id="color-scheme" href="assets/css/colors/default.css" rel="stylesheet">
+<html lang="en">
 
-  </head>
-  <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
-    <main>
-      <div class="page-loader">
-        <div class="loader">Loading...</div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>SDN KEPUTRAN 06 PEKALONGAN</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="assets/css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="assets/css/style.min.css" rel="stylesheet">
+  <style type="text/css">
+    html,
+    body,
+    header,
+    .carousel {
+      height: 100%;
+    }
+
+    @media (min-width: 800px) and (max-width: 850px) {
+      .navbar:not(.top-nav-collapse) {
+        background: #1C2331 !important;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+    <div class="container">
+
+      <!-- Brand -->
+      <a class="navbar-brand" href="index.php" target="_blank">
+        <img src="assets/mp4/png.png" alt="">
+      </a>
+
+      <!-- Collapse -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Left -->
+        <ul class="navbar-nav mr-auto">
+          <!-- Dropdown PROFIL-->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">PROFIL</a>
+            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="sambutan.php">SAMBUTAN KEPALA SEKOLAH</a>
+              <a class="dropdown-item" href="sejarah.php">SEJARAH</a>
+              <a class="dropdown-item" href="visimisi.php">VISI - MISI</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="dataguru.php">DATA PENDIDIK</a>
+          </li>
+          <!-- Dropdown INFORMASI-->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">INFORMASI</a>
+            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="agenda.php">AGENDA</a>
+              <a class="dropdown-item" href="pengumuman.php">PENGUMUMAN</a>
+              <a class="dropdown-item" href="https://corona.pekalongankota.go.id/">COVID 19</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="berita.php">BERITA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="artikel.php">ARTIKEL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="download.php">DOWNLOAD</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="hubungi.php">HUBUNGI KAMI</a>
+          </li>
+        </ul>
+
+        <!-- Right -->
+        <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item">
+            <a href="#" class="nav-link" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+        </ul>
+
       </div>
-      <nav class="navbar navbar-custom navbar-fixed-top navbar-transparent" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
-            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="index.php"><img src="assets/images/favicons/png.png"></a>
-          </div>
-          <div class="collapse navbar-collapse" id="custom-collapse">
-            <ul class="nav navbar-nav navbar-right">
-              <!--Awal Header-->
-              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">PROFIL</a>
-                <ul class="dropdown-menu">
-                  <li><a href="SambutanKepsek.php">Sambutan Kepala Sekolah</a></li>
-                  <li><a href="VisiMisi.php">Visi & Misi</a></li>
-                  <li><a href="sejarah.php">Sejarah</a></li>
-                  <!-- <li><a href="DataPendidik.php">Data Pendidik</a></li> -->
-                </ul>
-              </li>
-              <li><a href="DataPendidik.php">Data Pendidik</a></li>
-              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">INFORMASI</a>
-                <ul class="dropdown-menu">
-                  <li><a href="Agenda.php">Agenda</a></li>
-                  <li><a href="Pengumuman.php">Pengumuman</a></li>
-                  <li><a href="https://corona.pekalongankota.go.id/">Covid-19</a></li>
-                </ul>
-              </li>
-              <li><a href="berita.php">BERITA</a></li>
-              <li><a href="artikel.php">ARTIKEL</a></li>
-              <li><a href="download.php">DOWNLOAD</a></li>
-              <li><a href="hubungi.php">HUBUNGI KAMI</a></li>
-              <!-- Akhir Header -->
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <section class="home-section home-full-height bg-dark-30" id="home" data-background="assets/images/dobak.png">
-        <div class="video-player" data-property="{videoURL:'#', containment:'.home-section', startAt:18, mute:false, autoPlay:true, loop:true, opacity:1, showControls:false, showYTLogo:false, vol:25}"></div>
-        <div class="video-controls-box">
-          <div class="container">
-            <div class="video-controls"><a class="fa fa-volume-up" id="video-volume" href="#">&nbsp;</a><a class="fa fa-pause" id="video-play" href="#">&nbsp;</a></div>
-          </div>
-        </div>
-        <div class="titan-caption">
-          <div class="caption-content">
-            <div class="font-alt mb-10 titan-title-size-2">SELAMAT DATANG</div>
-            <div class="font-alt mb-20 titan-title-size-3">SDN KEPUTRAN 06 <br> PEKALONGAN</div>
-            
-            <!-- Tulisan Bergerak -->
-            <script language="JavaScript">
-            var text="PUTNAM THE BRIGHTER FUTURE";
-            var delay=20;
-            var currentChar=1;
-            var destination="[none]";
-            function type()
-            {
-              //if (document.all)
-            {
-            var dest=document.getElementById(destination);
-            if (dest)// && dest.innerHTML)
-            {
-            dest.innerHTML=text.substr(0, currentChar)+"<blink>_</blink>";
-            currentChar++;
-            if (currentChar>text.length)
-            {
-            currentChar=1;
-            setTimeout("type()", 4000);
-            }
-            else
-            {
-              setTimeout("type()", delay);
-            }
-            }
-            }
-            }
-            function startTyping(textParam, delayParam, destinationParam)
-            {
-            text=textParam;
-            delay=delayParam;
-            currentChar=1;
-            destination=destinationParam;
-            type();
-            }
-            </script> <b><div 0px="" 12px="" arial="" color:="" ff0000="" font:="" id="textDestination" margin:="" style="background-color: none;"></div></b> <script language="JavaScript">
-            javascript:startTyping(text, 50, "textDestination");
-            </script>
-            <!-- End Tulisan Bergerak -->
-            <a class="section-scroll btn btn-border-w btn-round" href="#about">Kunjungi</a>
-          </div>
-        </div>
-      </section>
-      <div class="main">
-        
-      <!-- Berita -->
-     
-      <section class="module" id="news">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-sm-6 col-sm-offset-3">
-                <h2 class="module-title font-alt">Berita</h2></div>
+
+    </div>
+  </nav>
+  <!-- Navbar -->
+
+  <!--Carousel Wrapper-->
+  <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
+
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+      <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+    </ol>
+    <!--/.Indicators-->
+
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+
+      <!--First slide-->
+      <div class="carousel-item active">
+        <div class="view">
+
+          <!--Video source-->
+          <video class="video-intro" autoplay loop muted>
+            <source src="assets/mp4/putnam5.mp4" type="video/mp4">
+          </video>
+
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            <!-- Content -->
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <strong>SDN KEPUTRAN 06 PEKALONGAN</strong>
+              </h1>
+
+              <h4>
+                <strong>Lead To The Brighter Future</strong>
+              </h4>
+
+              <a target="_blank" href="#" class="btn btn-outline-white btn-lg">
+                KUNJUNGI
+                <i class="fas fa-graduation-cap ml-2"></i>
+              </a>
             </div>
+            <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+      <!--/First slide-->
+
+      <!--Second slide-->
+      <div class="carousel-item">
+        <div class="view">
+
+          <!--Video source-->
+          <video class="video-intro" autoplay loop muted>
+            <source src="assets/mp4/putnam4.mp4" type="video/mp4">
+          </video>
+
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            <!-- Content -->
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <strong>SDN KEPUTRAN 06 PEKALONGAN</strong>
+              </h1>
+
+              <h4>
+                <strong>Lead To The Brighter Future</strong>
+              </h4>
+
+              <a target="_blank" href="#" class="btn btn-outline-white btn-lg">KUNJUNGI
+                <i class="fas fa-graduation-cap ml-2"></i>
+              </a>
+            </div>
+            <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+      <!--/Second slide-->
+
+      <!--Third slide-->
+      <div class="carousel-item">
+        <div class="view">
+
+          <!--Video source-->
+          <video class="video-intro" autoplay loop muted>
+            <source src="assets/mp4/putnam3.mp4" type="video/mp4">
+          </video>
+
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            <!-- Content -->
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <strong>SDN KEPUTRAN 06 PEKALONGAN</strong>
+              </h1>
+
+              <h4>
+                <strong>Lead To The Brighter Future</strong>
+              </h4>
+
+              <a target="_blank" href="sambutan.php" class="btn btn-outline-white btn-lg">KUNJUNGI
+                <i class="fas fa-graduation-cap ml-2"></i>
+              </a>
+            </div>
+            <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+      <!--/Third slide-->
+
+    </div>
+    <!--/.Slides-->
+
+    <!--Controls-->
+    <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <!--/.Controls-->
+
+  </div>
+  <!--/.Carousel Wrapper-->
+
+  <!--Main layout-->
+  <main>
+    <div class="container">
+      
+      <!-- this content -->
+      <section class="pt-4">
+          <br><br>
+          <!-- Heading & Description -->
+          <div class="wow fadeIn">
+              <!--Section heading-->
+              <h2 class="h1 text-center mb-5">BERITA</h2>
           </div>
 
-        <div class="container-fluid" >
-        <div class="row">
-        
-        <?php while($row = mysqli_fetch_assoc($query)) : ?>
-              <div class="col-lg-3 col-lg-3 col-lg-3 col-lg-3" align="center">
-              
-        
-                <div class="post-thumbnail"><a href="#"><img src="images/berita/<?= $row['foto'] ?>" alt="Blog-post Thumbnail" width="1000px" height="100px"/></a></div>
-                <h2 class="post-title"><a href="#"><?= $row['judul'] ?></a></h2>
-                <div class="post-meta"><?= $row['tgla'] ?></div>
-              </div>
-              
-            <?php endwhile; ?>
-            
-         
-                                   
-          </div>
-          <div class="container-fluid">
-          <div class="row multi-columns-row post-columns ">
+          <hr class="mb-5">
 
-          <div class="post-more" align="center"><button><a class="more-link" href="#">Read more</a></button></div>
-          
-              </div>
-              </div>
-           
-        </section>
-      <!-- End Berita -->
-        
-      <!-- presentation-->
-      <section class="module bg-dark-60" data-background="assets/images/section-6.jpg" autoplay>
-        <div class="container">
           <div class="row">
-            <div class="col-sm-12">
-              <div class="video-box">
-                <div class="video-box-icon"><a class="video-pop-up" href="https://www.youtube.com/watch?v=TTxZj3DZiIM"><span class="icon-video"></span></a></div>
-                <div class="video-title font-alt">Presentation</div>
-                <div class="video-subtitle font-alt">Watch the video about our new products</div>
+            <?php while($row = mysqli_fetch_assoc($query)) : ?>
+            <div class="col-lg-4 col-md-12 mb-4">
+
+              <!--Card-->
+              <div class="card card-cascade wider mb-4">
+
+                <!--Card image-->
+                <div class="view view-cascade">
+                  <img src="images/berita/<?= $row['foto'] ?>" class="card-img-top">
+                  <a href="#!">
+                    <div class="mask rgba-white-slight"></div>
+                  </a>
+                </div>
+                <!--/Card image-->
+
+                <!--Card content-->
+                <div class="card-body card-body-cascade text-left">
+                  <!--Title-->
+                  <h4 class="card-title"><?= $row['judul'] ?></h4>
+                  <!--Text-->
+                  <p class="card-text"><?= $row['tgla'] ?></p>
+                  <a href="#" class="btn btn-primary">Read More</a>
+
+                </div>
+                <!--/.Card content-->
+              
               </div>
+              <!--/.Card-->
+
             </div>
+            <?php endwhile; ?>
           </div>
-        </div>
+
+          
+        
+
+          <hr class="mb-5">
+
       </section>
 
-      <!-- Guru -->
-      <section class="module" id="news">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-sm-6 col-sm-offset-3">
-                <h2 class="module-title font-alt">Guru</h2></div>
-            </div>
-          </div>
-
-        <div class="container-fluid" >
-        <div class="row multi-columns-row post-columns">
-            <?php while($row1 = mysqli_fetch_assoc($query1)) : ?>
-              <div class="col-3 col-sm-4 col-md-2 col-lg-3" align="center">
-              
-                <div class="post-thumbnail"><a href="#"><img src="images/guru/<?= $row1['foto'] ?>" alt="Blog-post Thumbnail" width="150px" height="50px"/></a></div>
-                <h2 class="post-title"><a href="#"><?= $row1['nama'] ?></a></h2>
-                <div class="post-meta"><?= $row1['pendidikan'] ?></div>
-              </div>
-              
-            <?php endwhile; ?>
-                                   
-          </div>
-          <div class="container-fluid">
-          <div class="row multi-columns-row post-columns ">
-
-          <div class="post-more" align="center"><button><a class="more-link" href="DataPendidik.php">Read more</a></button></div>
-          
-              </div>
-              </div>
-           
-        </section>
-      <!-- End Guru -->
+      <hr class="my-5">      
 
       
-      <!--Start Footer-->
-      <hr class="divider-w">
-        <div class="module-small bg-dark">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-3">
-                <div class="widget">
-                  <h5 class="widget-title font-alt">Hubungi Kami</h5>
-                  <p>--coming soon--</p>
-                  <p>Phone: --coming soon--</p>
-                  <p>Email: --coming soon--</p>
-                  <!-- <p>Email:<a href="#">--coming soon--</a></p>-->
-                </div>
-              </div>
-              <div class="col-sm-3">
-                <div class="widget">
-                  <h5 class="widget-title font-alt">JAM PEMBELAJARAN</h5>
-                  <ul class="icon-list">
-                    <li>SENIN <a href="#"> 07.00 - 13.30</a></li>
-                    <li>SELASA<a href="#">07.00 - 13.30</a></li>
-                    <li>RABU   <a href="#">   07.00 - 13.30</a></li>
-                    <li>KAMIS <a href="#"> 07.00 - 13.30</a></li>
-                    <li>JUMAT <a href="#"> 07.00 - 10.30</a></li>
-                    <li>SABTU <a href="#"> 07.00 - 12.30</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-sm-3">
-                <div class="widget">
-                  <h5 class="widget-title font-alt">Kategori</h5>
-                  <ul class="icon-list">
-                    <li><a href="#">Berita</a></li>
-                    <li><a href="#">PPDB 2020</a></li>
-                    <li><a href="#">Agenda</a></li>
-                    <li><a href="#">Pengumuman</a></li>
-                    <li><a href="#">Tenaga Pendidik</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-sm-3">
-                <div class="widget">
-                  <h5 class="widget-title font-alt">MAPS</h5>
-                  <ul class="widget-posts">
-                    <li class="clearfix">
-                      <!-- Elemen yang akan menjadi kontainer peta -->
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.9502177888335!2d109.6760193143671!3d-6.8965580694050646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7024321f4ddfcd%3A0x2f5e37fb128178d0!2sSDN%20KEPUTRAN%2006%20PEKALONGAN!5e0!3m2!1sid!2sid!4v1595303947308!5m2!1sid!2sid" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> <!--End Footer-->
-        <hr class="divider-d">
-        <footer class="footer bg-dark">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-6">
-                <p class="copyright font-alt">&copy; 2020&nbsp;<a href="index.html">TIM IT SMAYANI</a>, All Rights Reserved</p>
-              </div>
-              <div class="col-sm-6">
-                <div class="footer-social-links"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-dribbble"></i></a><a href="#"><i class="fa fa-skype"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </footer>
-      </div>
-      <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
-    </main>
-    <!--  
-    JavaScripts
-    =============================================
-    -->
-    <script src="assets/lib/jquery/dist/jquery.js"></script>
-    <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="assets/lib/wow/dist/wow.js"></script>
-    <script src="assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
-    <script src="assets/lib/isotope/dist/isotope.pkgd.js"></script>
-    <script src="assets/lib/imagesloaded/imagesloaded.pkgd.js"></script>
-    <script src="assets/lib/flexslider/jquery.flexslider.js"></script>
-    <script src="assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
-    <script src="assets/lib/smoothscroll.js"></script>
-    <script src="assets/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
-    <script src="assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
-    <script src="assets/js/plugins.js"></script>
-    <script src="assets/js/main.js"></script>
-  </body>
+
+    </div>
+  </main>
+  <!--Main layout-->
+
+  <!--Footer-->
+  <footer class="page-footer text-center font-small mt-4 wow fadeIn">
+
+    <hr class="my-4">
+
+    <!-- Social icons -->
+    <div class="pb-4">
+      <a href="https://www.facebook.com/mdbootstrap" target="_blank">
+        <i class="fab fa-facebook-f mr-3"></i>
+      </a>
+
+      <a href="https://twitter.com/MDBootstrap" target="_blank">
+        <i class="fab fa-twitter mr-3"></i>
+      </a>
+
+      <a href="https://www.youtube.com/watch?v=7MUISDJ5ZZ4" target="_blank">
+        <i class="fab fa-youtube mr-3"></i>
+      </a>
+
+      <a href="https://plus.google.com/u/0/b/107863090883699620484" target="_blank">
+        <i class="fab fa-google-plus-g mr-3"></i>
+      </a>
+
+      <a href="https://dribbble.com/mdbootstrap" target="_blank">
+        <i class="fab fa-dribbble mr-3"></i>
+      </a>
+
+      <a href="https://pinterest.com/mdbootstrap" target="_blank">
+        <i class="fab fa-pinterest mr-3"></i>
+      </a>
+
+      <a href="https://github.com/mdbootstrap/bootstrap-material-design" target="_blank">
+        <i class="fab fa-github mr-3"></i>
+      </a>
+
+      <a href="http://codepen.io/mdbootstrap/" target="_blank">
+        <i class="fab fa-codepen mr-3"></i>
+      </a>
+    </div>
+    <!-- Social icons -->
+
+    <!--Copyright-->
+    <div class="footer-copyright py-3">
+      © 2020 Copyright:
+      <a href="#" target="_blank"> TIM IT </a>
+    </div>
+    <!--/.Copyright-->
+
+  </footer>
+  <!--/.Footer-->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="assets/js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="assets/js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="assets/js/mdb.min.js"></script>
+  <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+
+  </script>
+</body>
+
 </html>
