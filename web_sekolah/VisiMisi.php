@@ -26,8 +26,8 @@
       <div class="container">
 
         <!-- Brand -->
-        <a class="navbar-brand waves-effect" href="index.php" target="_blank">
-          <img src="assets/mp4/png.png" alt="">
+        <a class="navbar-brand waves-effect" href="index.php">
+        <img src="assets/mp4/60x60.png" alt="">
         </a>
 
         <!-- Collapse -->
@@ -110,7 +110,7 @@
 
         <!-- Content -->
         <div class="card-body text-white text-center py-5 px-5 my-5">
-          <img src="assets/mp4/big.png" class="animated bounce infinite" alt="Transparent MDB Logo" id="animated-img1" width="10%">
+          <img src="assets/mp4/big.png" class="animated bounce infinite" alt="Transparent MDB Logo" id="animated-img1" width="20%">
           <h1 class="mb-4">
             <strong>VISI & MISI</strong>
           </a>
@@ -259,7 +259,7 @@
     <!--Copyright-->
     <div class="footer-copyright py-3">
       © 2020 Copyright:
-      <a href="#" target="_blank"> TIM IT </a>
+      <a href="#" target="_blank"> TITIK KOMA DEVELOP </a>
     </div>
     <!--/.Copyright-->
 

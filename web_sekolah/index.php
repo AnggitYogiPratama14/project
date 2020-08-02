@@ -44,8 +44,8 @@ $query1 = mysqli_query($koneksi, "SELECT nama, pendidikan, foto FROM tbl_guru LI
     <div class="container">
 
       <!-- Brand -->
-      <a class="navbar-brand" href="index.php" target="_blank">
-        <img src="assets/mp4/png.png" alt="">
+      <a class="navbar-brand" href="index.php">
+        <img src="assets/mp4/60x60.png" alt="">
       </a>
 
       <!-- Collapse -->
@@ -56,8 +56,16 @@ $query1 = mysqli_query($koneksi, "SELECT nama, pendidikan, foto FROM tbl_guru LI
 
       <!-- Links -->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Right -->
+        <ul class="navbar-nav nav-flex-icons mr-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link"> <strong> SDN KEPUTRAN 06 <br> PEKALONGAN </strong>
+            </a>
+          </li>
+        </ul>
+
         <!-- Left -->
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav ml-auto">
           <!-- Dropdown PROFIL-->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
@@ -92,20 +100,6 @@ $query1 = mysqli_query($koneksi, "SELECT nama, pendidikan, foto FROM tbl_guru LI
           </li>
           <li class="nav-item">
             <a class="nav-link" href="hubungi.php">HUBUNGI KAMI</a>
-          </li>
-        </ul>
-
-        <!-- Right -->
-        <ul class="navbar-nav nav-flex-icons">
-          <li class="nav-item">
-            <a href="#" class="nav-link" target="_blank">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link" target="_blank">
-              <i class="fab fa-twitter"></i>
-            </a>
           </li>
         </ul>
 
@@ -148,10 +142,10 @@ $query1 = mysqli_query($koneksi, "SELECT nama, pendidikan, foto FROM tbl_guru LI
               </h1>
 
               <h4>
-                <strong>Lead To The Brighter Future</strong>
+                <strong>Lead To A Brighter Future</strong>
               </h4>
 
-              <a target="_blank" href="#" class="btn btn-outline-white btn-lg">
+              <a href="#" class="btn blue-gradient">
                 KUNJUNGI
                 <i class="fas fa-graduation-cap ml-2"></i>
               </a>
@@ -184,10 +178,10 @@ $query1 = mysqli_query($koneksi, "SELECT nama, pendidikan, foto FROM tbl_guru LI
               </h1>
 
               <h4>
-                <strong>Lead To The Brighter Future</strong>
+                <strong>Lead To A Brighter Future</strong>
               </h4>
 
-              <a target="_blank" href="#" class="btn btn-outline-white btn-lg">KUNJUNGI
+              <a href="#" class="btn aqua-gradient">KUNJUNGI
                 <i class="fas fa-graduation-cap ml-2"></i>
               </a>
             </div>
@@ -219,10 +213,10 @@ $query1 = mysqli_query($koneksi, "SELECT nama, pendidikan, foto FROM tbl_guru LI
               </h1>
 
               <h4>
-                <strong>Lead To The Brighter Future</strong>
+                <strong>Lead To A Brighter Future</strong>
               </h4>
 
-              <a target="_blank" href="sambutan.php" class="btn btn-outline-white btn-lg">KUNJUNGI
+              <a href="sambutan.php" class="btn purple-gradient">KUNJUNGI
                 <i class="fas fa-graduation-cap ml-2"></i>
               </a>
             </div>
@@ -288,8 +282,8 @@ $query1 = mysqli_query($koneksi, "SELECT nama, pendidikan, foto FROM tbl_guru LI
                   <!--Title-->
                   <h4 class="card-title"><?= $row['judul'] ?></h4>
                   <!--Text-->
-                  <p class="card-text"><?= $row['tgla'] ?></p>
-                  <a href="#" class="btn btn-primary">Read More</a>
+                  <p class="card-text"><i class="far fa-calendar-alt"></i><?= $row['tgla'] ?></p>
+                  <button type="button" class="btn btn-outline-default btn-rounded waves-effect"><i class="far fa-gem mr-2" aria-hidden="true"></i>KUNJUNGI</button>
 
                 </div>
                 <!--/.Card content-->
@@ -301,66 +295,92 @@ $query1 = mysqli_query($koneksi, "SELECT nama, pendidikan, foto FROM tbl_guru LI
             <?php endwhile; ?>
           </div>
 
-          
-        
-
-          <hr class="mb-5">
+         <hr class="mb-5">
+         
 
       </section>
-
-      <hr class="my-5">      
-
-      
 
     </div>
   </main>
   <!--Main layout-->
 
   <!--Footer-->
-  <footer class="page-footer text-center font-small mt-4 wow fadeIn">
+  <footer class="page-footer text-center font-small mt-4 wow fadeIn" style="background-image: url(assets/mp4/gif.gif); background-size:auto;">
 
     <hr class="my-4">
 
-    <!-- Social icons -->
-    <div class="pb-4">
-      <a href="https://www.facebook.com/mdbootstrap" target="_blank">
-        <i class="fab fa-facebook-f mr-3"></i>
-      </a>
+    <!-- Footer Links -->
+  <div class="container text-center text-md-left">
 
-      <a href="https://twitter.com/MDBootstrap" target="_blank">
-        <i class="fab fa-twitter mr-3"></i>
-      </a>
+  <!-- Grid row -->
+  <div class="row">
 
-      <a href="https://www.youtube.com/watch?v=7MUISDJ5ZZ4" target="_blank">
-        <i class="fab fa-youtube mr-3"></i>
-      </a>
+    <!-- Grid column -->
+    <div class="col-md-3 mx-auto">
 
-      <a href="https://plus.google.com/u/0/b/107863090883699620484" target="_blank">
-        <i class="fab fa-google-plus-g mr-3"></i>
-      </a>
+      <!-- Links -->
+      <h5 class="font-weight-bold text-uppercase mt-3 mb-4"><i class="fas fa-phone-alt"></i> Hubungi Kami </h5>
 
-      <a href="https://dribbble.com/mdbootstrap" target="_blank">
-        <i class="fab fa-dribbble mr-3"></i>
-      </a>
+      <ul class="list-unstyled">
+        <li>
+          <p><strong>Alamat : <br> </strong> -- coming soon -- </p>
+        </li>
+        <li>
+          <p><strong>Email : <br> </strong> -- coming soon -- </p>
+        </li>
+        <li>
+          <p><strong>Telephon : <br> </strong> -- coming soon -- </p>
+        </li>
+      </ul>
 
-      <a href="https://pinterest.com/mdbootstrap" target="_blank">
-        <i class="fab fa-pinterest mr-3"></i>
-      </a>
-
-      <a href="https://github.com/mdbootstrap/bootstrap-material-design" target="_blank">
-        <i class="fab fa-github mr-3"></i>
-      </a>
-
-      <a href="http://codepen.io/mdbootstrap/" target="_blank">
-        <i class="fab fa-codepen mr-3"></i>
-      </a>
     </div>
-    <!-- Social icons -->
+    <!-- Grid column -->
+
+    <hr class="clearfix w-100 d-md-none">
+
+    <!-- Grid column -->
+    <div class="col-md-3 mx-auto">
+
+      <!-- Links -->
+      <h5 class="font-weight-bold text-uppercase mt-3 mb-4"><i class="far fa-clock"></i> Jam Pelajaran </h5>
+
+      <ul class="list-unstyled">
+        <li>
+          <a href="#!"> -- coming soon -- </a>
+        </li>
+        <li>
+          <a href="#!"> -- coming soon -- </a>
+        </li>
+        <li>
+          <a href="#!"> -- coming soon -- </a>
+        </li>
+        <li>
+          <a href="#!"> -- coming soon -- </a>
+        </li>
+      </ul>
+
+    </div>
+    <!-- Grid column -->
+
+    <hr class="clearfix w-100 d-md-none">
+
+    <!-- youtube -->
+    <div class="embed-responsive embed-responsive-16by9" style="padding-bottom:20px; width:450px;">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v64KOxKVLVg" allowfullscreen></iframe>
+    </div>
+
+    <hr class="clearfix w-100 d-md-none">
+
+  </div>
+  <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
 
     <!--Copyright-->
     <div class="footer-copyright py-3">
       © 2020 Copyright:
-      <a href="#" target="_blank"> TIM IT </a>
+      <a href="#" target="_blank"> TITIK KOMA DEVELOP </a>
     </div>
     <!--/.Copyright-->
 
