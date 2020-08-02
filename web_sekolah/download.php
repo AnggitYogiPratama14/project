@@ -26,8 +26,8 @@
             <div class="container">
 
                 <!-- Brand -->
-                <a class="navbar-brand waves-effect" href="index.php" target="_blank">
-                    <img src="assets/mp4/png.png" alt="">
+                <a class="navbar-brand waves-effect" href="index.php">
+                <img src="assets/mp4/60x60.png" alt="">
                 </a>
 
                 <!-- Collapse -->

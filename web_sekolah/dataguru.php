@@ -32,8 +32,8 @@ $no = 1;
       <div class="container">
 
         <!-- Brand -->
-        <a class="navbar-brand waves-effect" href="index.php" target="_blank">
-          <img src="assets/mp4/png.png" alt="">
+        <a class="navbar-brand waves-effect" href="index.php">
+        <img src="assets/mp4/60x60.png" alt="">
         </a>
 
         <!-- Collapse -->
@@ -116,7 +116,7 @@ $no = 1;
 
         <!-- Content -->
         <div class="card-body text-white text-center py-5 px-5 my-5">
-          <img src="assets/mp4/big.png" class="animated bounce infinite" alt="Transparent MDB Logo" id="animated-img1" width="10%">
+          <img src="assets/mp4/big.png" class="animated bounce infinite" alt="Transparent MDB Logo" id="animated-img1" width="20%">
           <h1 class="mb-4">
             <strong>DATA PENDIDIK</strong>
           </a>
@@ -126,88 +126,40 @@ $no = 1;
       </section>
       <!--Section: Jumbotron-->
 
-      <!--Section: Cards-->
-      <section class="pt-5">
+      <br><br>
 
-        <!-- Heading & Description -->
-        <div class="wow fadeIn">
-          <!--Section heading-->
-          <h2 class="h1 text-center mb-5">DATA PENDIDIK SDN KEPUTRAN 06 PEKALONGAN</h2>
-        </div>
-        <!-- Heading & Description -->
-        <div class="row wow fadeIn">
-                
-        <!-- Content Here -->
-        <table class="table">
-            <thead class="grey lighten-2" align="center">
-            <tr>
-                <th>No</th>
-                <th width="100px">Foto</th>
-                <th>Nama</th>
-                <th>Email</th>
-                <th>Telephon</th>
-            </tr>
-            </thead>
-            <tbody align="center">
-              <?php while($row = mysqli_fetch_assoc($query)) : ?>
-									<tr>
-										<td><?= $no++ ?></td>
-										<td><img src="images/guru/<?= $row['foto'] ?>" alt="" width="100%" class="img-thumbnail"></td>
-										<td><a href="detail.php?id=<?= $row['id'] ?>"><?= $row['nama'] ?></a></td>
-										<td><?= $row['email'] ?></td>
-										<td><?= $row['telp'] ?></td>
-									</tr>
-              <?php endwhile; ?>
-            </tbody>
-        </table>
+      <div class="row">
+          <?php while($row = mysqli_fetch_assoc($query)) : ?>
+          <div class="col-lg-4 col-md-12 mb-4">
 
-        </div>
+              <!--Card-->
+              <div class="card-cascade wider mb-4">
 
-        <hr class="mb-5">
-        <br>
+              <!--Card image-->
+              <div class="view view-cascade">
+                  <div class="avatar mx-auto" align="center">
+                      <img src="images/guru/<?= $row['foto'] ?>" class="card-img-top rounded-circle img-fluid" style="padding-top:20px; width:40%;">
+                  </div>
+              </div>
+              <!--/Card image-->
 
-        <!--Pagination-->
-        <!-- <nav class="d-flex justify-content-center wow fadeIn">
-          <ul class="pagination pg-blue">
+              <!--Card content-->
+              <div class="card-body card-body-cascade text-center">
+                  <!--Title-->
+                  <a href="#">
+                    <h5 class="font-weight-bold dark-grey-text mt-4"><?= $row['nama'] ?></h5>
+                  </a>
+                  <h6 class="font-weight-bold blue-text my-3"><?= $row['pendidikan'] ?></h6>
 
-            
-            <li class="page-item disabled">
-              <a class="page-link" href="#" aria-label="Previous">
-                <span aria-hidden="true">&laquo;</span>
-                <span class="sr-only">Previous</span>
-              </a>
-            </li>
+              </div>
+              <!--/.Card content-->
+              
+              </div>
+              <!--/.Card-->
 
-            <li class="page-item active">
-              <a class="page-link" href="#">1
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#">2</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#">3</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#">4</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#">5</a>
-            </li>
-
-            <li class="page-item">
-              <a class="page-link" href="#" aria-label="Next">
-                <span aria-hidden="true">&raquo;</span>
-                <span class="sr-only">Next</span>
-              </a>
-            </li>
-          </ul>
-        </nav> -->
-        <!--Pagination-->
-
-      </section>
-      <!--Section: Cards-->
+          </div>
+          <?php endwhile; ?>
+      </div>
 
     </div>
   </main>
@@ -256,7 +208,7 @@ $no = 1;
     <!--Copyright-->
     <div class="footer-copyright py-3">
       © 2020 Copyright:
-      <a href="#" target="_blank"> TIM IT </a>
+      <a href="#" target="_blank"> TITIK KOMA DEVELOP </a>
     </div>
     <!--/.Copyright-->
 
