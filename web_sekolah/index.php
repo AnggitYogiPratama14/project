@@ -256,7 +256,7 @@ $query1 = mysqli_query($koneksi, "SELECT nama, pendidikan, foto FROM tbl_guru LI
           <!-- Heading & Description -->
           <div class="wow fadeIn">
               <!--Section heading-->
-              <h2 class="h1 text-center mb-5">BERITA</h2>
+              <h3 class="text-center mb-5">BERITA</h3>
           </div>
 
           <hr class="mb-5">
@@ -280,7 +280,7 @@ $query1 = mysqli_query($koneksi, "SELECT nama, pendidikan, foto FROM tbl_guru LI
                 <!--Card content-->
                 <div class="card-body card-body-cascade text-left">
                   <!--Title-->
-                  <h4 class="card-title"><?= $row['judul'] ?></h4>
+                  <h5 class="card-title"><?= $row['judul'] ?></h5>
                   <!--Text-->
                   <p class="card-text"><i class="far fa-calendar-alt"></i><?= $row['tgla'] ?></p>
                   <button type="button" class="btn btn-outline-default btn-rounded waves-effect"><i class="far fa-gem mr-2" aria-hidden="true"></i>KUNJUNGI</button>
