@@ -2,7 +2,7 @@
 require_once 'koneksi.php';
 
 $query = mysqli_query($koneksi, "SELECT judul, isi, tgla, foto FROM tbl_berita LIMIT 3");
-$query1 = mysqli_query($koneksi, "SELECT nama, pendidikan, foto FROM tbl_guru LIMIT 4");
+$query1 = mysqli_query($koneksi, "SELECT judul, isi, tgla, foto, tmpt, wkt FROM tbl_agenda LIMIT 3");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -59,7 +59,7 @@ $query1 = mysqli_query($koneksi, "SELECT nama, pendidikan, foto FROM tbl_guru LI
         <!-- Right -->
         <ul class="navbar-nav nav-flex-icons mr-auto">
           <li class="nav-item">
-            <a href="#" class="nav-link"> <strong> SDN KEPUTRAN 06 <br> PEKALONGAN </strong>
+            <a href="index.php" class="nav-link"> <strong> SDN KEPUTRAN 06 <br> PEKALONGAN </strong>
             </a>
           </li>
         </ul>
@@ -256,7 +256,7 @@ $query1 = mysqli_query($koneksi, "SELECT nama, pendidikan, foto FROM tbl_guru LI
           <!-- Heading & Description -->
           <div class="wow fadeIn">
               <!--Section heading-->
-              <h3 class="text-center mb-5">BERITA</h3>
+              <h3 class="text-left mb-5">BERITA</h3>
           </div>
 
           <hr class="mb-5">
@@ -295,9 +295,53 @@ $query1 = mysqli_query($koneksi, "SELECT nama, pendidikan, foto FROM tbl_guru LI
             <?php endwhile; ?>
           </div>
 
+         
          <hr class="mb-5">
          
+         <br>
+          <!-- Heading & Description -->
+          <div class="wow fadeIn">
+              <!--Section heading-->
+              <h3 class="text-center mb-5">AGENDA</h3>
+          </div>
 
+          <hr class="mb-5">
+
+          <div class="row">
+            <?php while($row1 = mysqli_fetch_assoc($query1)) : ?>
+            <div class="col-lg-4 col-md-12 mb-4">
+
+              <!--Card-->
+              <div class="card card-cascade wider mb-4">
+
+                <!--Card image-->
+                <div class="view view-cascade">
+                  <img src="images/agenda/<?= $row1['foto'] ?>" class="card-img-top">
+                  <a href="#!">
+                    <div class="mask rgba-white-slight"></div>
+                  </a>
+                </div>
+                <!--/Card image-->
+
+                <!--Card content-->
+                <div class="card-body card-body-cascade text-left">
+                  <!--Title-->
+                  <h5 class="card-title"><?= $row1['judul'] ?></h5>
+                  <!--Text-->
+                  <p class="card-text"><i class="far fa-calendar-alt"></i><?= $row1['tgla'] ?></p>
+                  <p class="card-text"><i class="far fa-clock"></i><?= $row1['wkt'] ?></p>
+                  <p class="card-text"><i class="fas fa-map-marker-alt"></i><?= $row1['tmpt'] ?></p>
+                  <button type="button" class="btn btn-outline-primary waves-effect"><i class="fas fa-sun pr-2" aria-hidden="true"></i>KUNJUNGI</button>
+
+                </div>
+                <!--/.Card content-->
+              
+              </div>
+              <!--/.Card-->
+
+            </div>
+            <?php endwhile; ?>
+          </div>
       </section>
 
     </div>
