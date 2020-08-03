@@ -43,61 +43,54 @@ $query = mysqli_query($koneksi, "SELECT judul, isi, tgla, tmpt, wkt, foto FROM t
 
         <!-- Links -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Right -->
+        <ul class="navbar-nav nav-flex-icons mr-auto">
+          <li class="nav-item">
+            <a href="index.php" class="nav-link"> <strong> SDN KEPUTRAN 06 <br> PEKALONGAN </strong>
+            </a>
+          </li>
+        </ul>
 
-          <!-- Left -->
-          <ul class="navbar-nav mr-auto">
-            <!-- Dropdown PROFIL-->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">PROFIL</a>
-              <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="sambutan.php">SAMBUTAN KEPALA SEKOLAH</a>
-                <a class="dropdown-item" href="sejarah.php">SEJARAH</a>
-                <a class="dropdown-item" href="visimisi.php">VISI - MISI</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="dataguru.php">DATA PENDIDIK</a>
-            </li>
-            <!-- Dropdown INFORMASI-->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">INFORMASI</a>
-              <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="agenda.php">AGENDA</a>
-                <a class="dropdown-item" href="pengumuman.php">PENGUMUMAN</a>
-                <a class="dropdown-item" href="https://corona.pekalongankota.go.id/">COVID 19</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="berita.php">BERITA</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="artikel.php">ARTIKEL</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="download.php">DOWNLOAD</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="hubungi.php">HUBUNGI KAMI</a>
-            </li>
-          </ul>
+        <!-- Left -->
+        <ul class="navbar-nav ml-auto">
+          <!-- Dropdown PROFIL-->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">PROFIL</a>
+            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="sambutan.php">SAMBUTAN KEPALA SEKOLAH</a>
+              <a class="dropdown-item" href="sejarah.php">SEJARAH</a>
+              <a class="dropdown-item" href="visimisi.php">VISI - MISI</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="dataguru.php">DATA PENDIDIK</a>
+          </li>
+          <!-- Dropdown INFORMASI-->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">INFORMASI</a>
+            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="agenda.php">AGENDA</a>
+              <a class="dropdown-item" href="pengumuman.php">PENGUMUMAN</a>
+              <a class="dropdown-item" href="https://corona.pekalongankota.go.id/">COVID 19</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="berita.php">BERITA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="artikel.php">ARTIKEL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="download.php">DOWNLOAD</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="hubungi.php">HUBUNGI KAMI</a>
+          </li>
+        </ul>
 
-          <!-- Right -->
-          <ul class="navbar-nav nav-flex-icons">
-            <li class="nav-item">
-              <a href="https://www.facebook.com/mdbootstrap" class="nav-link waves-effect" target="_blank">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="https://twitter.com/MDBootstrap" class="nav-link waves-effect" target="_blank">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-          </ul>
-
-        </div>
+      </div>
 
       </div>
     </nav>
@@ -130,37 +123,44 @@ $query = mysqli_query($koneksi, "SELECT judul, isi, tgla, tmpt, wkt, foto FROM t
           <!-- Heading & Description -->
           <div class="wow fadeIn">
               <!--Section heading-->
-              <h2 class="h1 text-center mb-5">AGENDA</h2>
+              <h3 class="text-center mb-5">AGENDA</h3>
           </div>
 
           <hr class="mb-5">
 
-          <!--Grid row-->
-          <div class="row mt-3 wow fadeIn">
+          <div class="row">
             <?php while($row = mysqli_fetch_assoc($query)) : ?>
-              <!--Grid column-->
-              <div class="col-lg-5 col-xl-4 mb-4">
-                  <!--Featured image-->
-                  <div class="view overlay rounded z-depth-1">
-                      <img src="images/agenda/<?= $row['foto'] ?>" class="img-fluid" alt="">
-                      <a href="#" target="_blank">
-                          <div class="mask rgba-white-slight"></div>
-                      </a>
-                  </div>
-              </div>
-              <!--Grid column-->
+            <div class="col-lg-4 col-md-12 mb-4">
 
-              <!--Grid column-->
-              <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
-                  <h3 class="mb-3 font-weight-bold dark-grey-text">
-                      <strong><a href="#"><?= $row['judul'] ?></a></strong>
-                  </h3>
-                  <p class="grey-text"><?= $row['tgla'] ?></p>
-                  <a href="https://mdbootstrap.com/education/tech-marketing/automated-app-introduction/" target="_blank" class="btn btn-primary btn-md">Kunjungi
-                      <i class="fas fa-play ml-2"></i>
+              <!--Card-->
+              <div class="card card-cascade wider mb-4">
+
+                <!--Card image-->
+                <div class="view view-cascade">
+                  <img src="images/agenda/<?= $row['foto'] ?>" class="card-img-top">
+                  <a href="#!">
+                    <div class="mask rgba-white-slight"></div>
                   </a>
+                </div>
+                <!--/Card image-->
+
+                <!--Card content-->
+                <div class="card-body card-body-cascade text-left">
+                  <!--Title-->
+                  <h5 class="card-title"><?= $row['judul'] ?></h5>
+                  <!--Text-->
+                  <p class="card-text"><i class="far fa-calendar-alt"></i><?= $row['tgla'] ?></p>
+                  <p class="card-text"><i class="far fa-clock"></i><?= $row['wkt'] ?></p>
+                  <p class="card-text"><i class="fas fa-map-marker-alt"></i><?= $row['tmpt'] ?></p>
+                  <button type="button" class="btn btn-outline-primary waves-effect"><i class="fas fa-sun pr-2" aria-hidden="true"></i>KUNJUNGI</button>
+
+                </div>
+                <!--/.Card content-->
+              
               </div>
-              <!--Grid column-->
+              <!--/.Card-->
+
+            </div>
             <?php endwhile; ?>
           </div>
           <!--Grid row-->
@@ -174,44 +174,77 @@ $query = mysqli_query($koneksi, "SELECT judul, isi, tgla, tmpt, wkt, foto FROM t
   <!--Main layout-->
 
   <!--Footer-->
-  <footer class="page-footer text-center font-small mdb-color darken-2 mt-4 wow fadeIn">
+  <footer class="page-footer text-center font-small mt-4 wow fadeIn" style="background-image: url(assets/mp4/gif.gif); background-size:auto;">
+
     <hr class="my-4">
 
-    <!-- Social icons -->
-    <div class="pb-4">
-      <a href="https://www.facebook.com/mdbootstrap" target="_blank">
-        <i class="fab fa-facebook-f mr-3"></i>
-      </a>
+    <!-- Footer Links -->
+  <div class="container text-center text-md-left">
 
-      <a href="https://twitter.com/MDBootstrap" target="_blank">
-        <i class="fab fa-twitter mr-3"></i>
-      </a>
+  <!-- Grid row -->
+  <div class="row">
 
-      <a href="https://www.youtube.com/watch?v=7MUISDJ5ZZ4" target="_blank">
-        <i class="fab fa-youtube mr-3"></i>
-      </a>
+    <!-- Grid column -->
+    <div class="col-md-3 mx-auto">
 
-      <a href="https://plus.google.com/u/0/b/107863090883699620484" target="_blank">
-        <i class="fab fa-google-plus-g mr-3"></i>
-      </a>
+      <!-- Links -->
+      <h5 class="font-weight-bold text-uppercase mt-3 mb-4"><i class="fas fa-phone-alt"></i> Hubungi Kami </h5>
 
-      <a href="https://dribbble.com/mdbootstrap" target="_blank">
-        <i class="fab fa-dribbble mr-3"></i>
-      </a>
+      <ul class="list-unstyled">
+        <li>
+          <p><strong>Alamat : <br> </strong> -- coming soon -- </p>
+        </li>
+        <li>
+          <p><strong>Email : <br> </strong> -- coming soon -- </p>
+        </li>
+        <li>
+          <p><strong>Telephon : <br> </strong> -- coming soon -- </p>
+        </li>
+      </ul>
 
-      <a href="https://pinterest.com/mdbootstrap" target="_blank">
-        <i class="fab fa-pinterest mr-3"></i>
-      </a>
-
-      <a href="https://github.com/mdbootstrap/bootstrap-material-design" target="_blank">
-        <i class="fab fa-github mr-3"></i>
-      </a>
-
-      <a href="http://codepen.io/mdbootstrap/" target="_blank">
-        <i class="fab fa-codepen mr-3"></i>
-      </a>
     </div>
-    <!-- Social icons -->
+    <!-- Grid column -->
+
+    <hr class="clearfix w-100 d-md-none">
+
+    <!-- Grid column -->
+    <div class="col-md-3 mx-auto">
+
+      <!-- Links -->
+      <h5 class="font-weight-bold text-uppercase mt-3 mb-4"><i class="far fa-clock"></i> Jam Pelajaran </h5>
+
+      <ul class="list-unstyled">
+        <li>
+          <a href="#!"> -- coming soon -- </a>
+        </li>
+        <li>
+          <a href="#!"> -- coming soon -- </a>
+        </li>
+        <li>
+          <a href="#!"> -- coming soon -- </a>
+        </li>
+        <li>
+          <a href="#!"> -- coming soon -- </a>
+        </li>
+      </ul>
+
+    </div>
+    <!-- Grid column -->
+
+    <hr class="clearfix w-100 d-md-none">
+
+    <!-- youtube -->
+    <div class="embed-responsive embed-responsive-16by9" style="padding-bottom:20px; width:450px;">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v64KOxKVLVg" allowfullscreen></iframe>
+    </div>
+
+    <hr class="clearfix w-100 d-md-none">
+
+  </div>
+  <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
 
     <!--Copyright-->
     <div class="footer-copyright py-3">
