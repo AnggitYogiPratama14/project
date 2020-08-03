@@ -19,13 +19,13 @@ $active = 'download';
 <!-- navbar start -->
 <?php
 require_once '../cek_session.php';
-$base_url = "http://localhost/web_sekolah/" 
+$base_url = "http://localhost/project/web_sekolah/" 
 ?>
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 	<div class="container">
 		<ul class="navbar-nav">
 			<li class="nav-item">
-				<a class="nav-link <?= $active == 'dashboard' ? 'active' : '' ?>" href="<?= $base_url ?>admin">Dashboard</a>
+				<a class="nav-link <?= $active == 'dashboard' ? 'active' : '' ?>" href="<?= $base_url ?>admin/index.php">Dashboard</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link <?= $active == 'download' ? 'active' : '' ?> " href="<?= $base_url ?>admin/download/index.php">Download</a>
@@ -74,8 +74,11 @@ $base_url = "http://localhost/web_sekolah/"
                   ?>
                   <td><?php echo $fetch['file_id']?></td>
                   <td><?php echo $fetch['name']?></td>
-                  <td><a href="download.php?file=<?php echo $name[1]?>" class="btn btn-primary"><span class="glyphicon glyphicon-download"></span> Download</a></td>
-
+                  <td>
+                    <a href="download.php?file=<?php echo $name[1]?>" class="btn btn-primary"><span class="glyphicon glyphicon-download"></span> Download</a>
+                    <!-- <a href="hapus.php?file=<?php echo $name[1]; ?>" class="btn btn-danger btn-sm" onclick="return confirm('apakah anda yakin?')">Hapus</a> -->
+                  </td>
+                  
                 </tr>
                 <?php
               }

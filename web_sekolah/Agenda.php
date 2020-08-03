@@ -1,7 +1,7 @@
 <?php 
 require_once 'koneksi.php';
 
-$query = mysqli_query($koneksi, "SELECT judul, isi, tgla, tmpt, wkt, foto FROM tbl_agenda");
+$query = mysqli_query($koneksi, "SELECT id, judul, isi, tgla, tmpt, wkt, foto FROM tbl_agenda");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -73,7 +73,7 @@ $query = mysqli_query($koneksi, "SELECT judul, isi, tgla, tmpt, wkt, foto FROM t
             <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" href="agenda.php">AGENDA</a>
               <a class="dropdown-item" href="pengumuman.php">PENGUMUMAN</a>
-              <a class="dropdown-item" href="https://corona.pekalongankota.go.id/">COVID 19</a>
+              <a class="dropdown-item" href="https://corona.pekalongankota.go.id/" target="_blank">COVID 19</a>
             </div>
           </li>
           <li class="nav-item">
@@ -152,8 +152,7 @@ $query = mysqli_query($koneksi, "SELECT judul, isi, tgla, tmpt, wkt, foto FROM t
                   <p class="card-text"><i class="far fa-calendar-alt"></i><?= $row['tgla'] ?></p>
                   <p class="card-text"><i class="far fa-clock"></i><?= $row['wkt'] ?></p>
                   <p class="card-text"><i class="fas fa-map-marker-alt"></i><?= $row['tmpt'] ?></p>
-                  <button type="button" class="btn btn-outline-primary waves-effect"><i class="fas fa-sun pr-2" aria-hidden="true"></i>KUNJUNGI</button>
-
+                  <a href="detailagenda.php?id=<?= $row['id'] ?>" class="btn btn-outline-primary waves-effect"><i class="fas fa-sun pr-2" aria-hidden="true"></i>KUNJUNGI</a>
                 </div>
                 <!--/.Card content-->
               

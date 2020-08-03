@@ -3,6 +3,8 @@ require_once 'koneksi.php';
 
 $query = mysqli_query($koneksi, "SELECT id, nama, j_kelamin, t_lahir, tgl_lahir, s_pegawai, nip, pendidikan, univ, alamat, email, telp, foto FROM tbl_guru");
 $no = 1;
+
+$active = 'master';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -74,7 +76,7 @@ $no = 1;
             <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" href="agenda.php">AGENDA</a>
               <a class="dropdown-item" href="pengumuman.php">PENGUMUMAN</a>
-              <a class="dropdown-item" href="https://corona.pekalongankota.go.id/">COVID 19</a>
+              <a class="dropdown-item" href="https://corona.pekalongankota.go.id/" target="_blank">COVID 19</a>
             </div>
           </li>
           <li class="nav-item">
@@ -139,11 +141,11 @@ $no = 1;
               <!--Card content-->
               <div class="card-body card-body-cascade text-center">
                   <!--Title-->
-                  <a href="detailguru.php">
+                  <a href="#">
                     <h5 class="font-weight-bold dark-grey-text mt-4"><?= $row['nama'] ?></h5>
                   </a>
                   <h6 class="font-weight-bold blue-text my-3"><?= $row['pendidikan'] ?></h6>
-
+                  <a href="detailguru.php?id=<?= $row['id'] ?>" class="btn btn-outline-default waves-effect"><i class="fas fa-star pr-2" aria-hidden="true"></i>KUNJUNGI</a>
               </div>
               <!--/.Card content-->
               

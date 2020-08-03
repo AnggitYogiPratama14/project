@@ -1,3 +1,13 @@
+<?php 
+require_once 'koneksi.php';
+
+if(!isset($_GET['id']) || $_GET['id'] == '') header('Location: Pengumuman.php');
+
+$id = $_GET['id'];
+$query = mysqli_query($koneksi, "SELECT id, judul, isi, tgla, foto FROM tbl_pengumuman");
+
+$row = mysqli_fetch_assoc($query);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -105,108 +115,47 @@
         <div class="card-body text-white text-center py-5 px-5 my-5">
           <img src="assets/mp4/big.png" class="animated bounce infinite" alt="Transparent MDB Logo" id="animated-img1" width="20%">
           <h1 class="mb-4">
-            <strong>SAMBUTAN KEPALA SEKOLAH</strong>
+            <strong>ARTIKEL SDN KEPUTRAN 06 PEKALONGAN</strong>
           </a>
 
         </div>
         <!-- Content -->
       </section>
       <!--Section: Jumbotron-->
-
-      <!--Section: Cards-->
-      <section class="pt-5">
-
-        <!-- Heading & Description -->
-        <div class="wow fadeIn">
-          <!--Section heading-->
-          <h2 class="h1 text-center mb-5">KEPALA SEKOLAH : FARITA, S.Pd</h2>
-        </div>
-        <!-- Heading & Description -->
-
-        <!--Grid row-->
-        <div class="row wow fadeIn">
-
-          <!--Grid column-->
-          <div class="col-lg-5 col-xl-4 mb-4">
-            <!--Featured image-->
-            <div class="view overlay rounded z-depth-1-half">
-              <div class="view overlay">
-                <div class="embed-responsive embed-responsive-16by9">
-                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/OnfYLBNvrPw" allowfullscreen></iframe>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
-            <h3 class="mb-3 font-weight-bold dark-grey-text">
-              <strong>SDN KEPUTRAN 06 PEKALONGAN</strong>
-            </h3>
-            <hr class="mb-1">
-            <p>
-              <strong>ASSALAMU ALAIKUM WR.WB</strong>
-            </p>
-            <p class="grey-text" align="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid expedita tenetur voluptate, 
-              corrupti qui perspiciatis sint enim placeat doloremque obcaecati illum facere ducimus id architecto, quaerat commodi. 
-              Iure, cupiditate reiciendis.</p>
-            <p>
-              <strong>WASSALAMU ALAIKUM WR.WB</strong>
-            </p>
-          </div>
-          <!--Grid column-->
-
-        </div>
-        <!--Grid row-->
-
-        <hr class="mb-5">
-        <br>
-
-        <!--Pagination-->
-        <!-- <nav class="d-flex justify-content-center wow fadeIn">
-          <ul class="pagination pg-blue">
-
-            
-            <li class="page-item disabled">
-              <a class="page-link" href="#" aria-label="Previous">
-                <span aria-hidden="true">&laquo;</span>
-                <span class="sr-only">Previous</span>
-              </a>
-            </li>
-
-            <li class="page-item active">
-              <a class="page-link" href="#">1
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#">2</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#">3</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#">4</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#">5</a>
-            </li>
-
-            <li class="page-item">
-              <a class="page-link" href="#" aria-label="Next">
-                <span aria-hidden="true">&raquo;</span>
-                <span class="sr-only">Next</span>
-              </a>
-            </li>
-          </ul>
-        </nav> -->
-        <!--Pagination-->
-
-      </section>
-      <!--Section: Cards-->
-
-    </div>
+	  
+	  <br>
+    <table class="table table-stripped">
+              <tr>
+								<td><b>Foto</b></td>
+								<td>:</td>
+								<td><img src="images/pengumuman/<?= $row['foto'] ?>" alt="<?= $row['judul'] ?>" width="50%" class="img-thumbnail"></td>
+							</tr>
+							<tr>
+								<td><b>Judul</b></td>
+								<td>:</td>
+								<td><?= $row['judul'] ?></td>
+							</tr>
+							<tr>
+								<td><b>Isi</b></td>
+								<td>:</td>
+								<td><?= $row['isi'] ?></td>
+							</tr>
+							
+							<tr>
+								<td><b>Tanggal</b></td>
+								<td>:</td>
+								<td><?= $row['tgla'] ?></td>
+							</tr>
+							<tr>
+								<td><b></td>
+								<td></td>
+								<td>
+									<a href="Agenda.php" class="btn btn-secondary btn-sm">Kembali</a>
+								</td>
+							</tr>
+						</table>
+	
+    <hr class="mb-5">
   </main>
   <!--Main layout-->
 

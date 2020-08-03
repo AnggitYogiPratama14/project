@@ -64,10 +64,20 @@ $active = 'master';
 									</div>
 								</div>
 							</div>
-							<div class="form-group">
-								<label for="s_pegawai">Status Pegawai</label>
-								<input type="text" value="<?= $guru['s_pegawai'] ?>" class="form-control" id="s_pegawai" placeholder="status pegawai" autocomplete="off" required="required" name="s_pegawai">
+							<div class="row">
+								<div class="col">
+									<div class="form-group">
+										<label for="s_pegawai">Status Pegawai</label>
+										<select name="s_pegawai" id="s_pegawai" class="form-control">
+											<option value="NO_DATA" <?= $guru['s_pegawai'] == 'NO_DATA' ? 'selected' : '' ?>>---OPTION---</option>
+											<option value="PNS" <?= $guru['s_pegawai'] == 'PNS' ? 'selected' : '' ?>>PNS</option>
+											<option value="GTT" <?= $guru['s_pegawai'] == 'GTT' ? 'selected' : '' ?>>GTT</option>
+											<option value="PTT" <?= $guru['s_pegawai'] == 'PTT' ? 'selected' : '' ?>>PTT</option>
+										</select>
+									</div>
+								</div>
 							</div>
+
 							<div class="form-group">
 								<label for="nip">NIP</label>
 								<input type="number" value="<?= $guru['nip'] ?>" class="form-control" id="nip" placeholder="NIP" autocomplete="off" required="required" name="nip">

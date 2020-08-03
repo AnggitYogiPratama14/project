@@ -86,7 +86,7 @@ $query1 = mysqli_query($koneksi, "SELECT judul, isi, tgla, foto, tmpt, wkt FROM 
             <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" href="agenda.php">AGENDA</a>
               <a class="dropdown-item" href="pengumuman.php">PENGUMUMAN</a>
-              <a class="dropdown-item" href="https://corona.pekalongankota.go.id/">COVID 19</a>
+              <a class="dropdown-item" href="https://corona.pekalongankota.go.id/" target="_blank">COVID 19</a>
             </div>
           </li>
           <li class="nav-item">
@@ -117,6 +117,8 @@ $query1 = mysqli_query($koneksi, "SELECT judul, isi, tgla, foto, tmpt, wkt FROM 
       <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
       <li data-target="#carousel-example-1z" data-slide-to="1"></li>
       <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+      <li data-target="#carousel-example-1z" data-slide-to="3"></li>
+      <li data-target="#carousel-example-1z" data-slide-to="4"></li>
     </ol>
     <!--/.Indicators-->
 
@@ -228,6 +230,76 @@ $query1 = mysqli_query($koneksi, "SELECT judul, isi, tgla, foto, tmpt, wkt FROM 
         </div>
       </div>
       <!--/Third slide-->
+
+      <!--fourth slide-->
+      <div class="carousel-item">
+        <div class="view">
+
+          <!--Video source-->
+          <video class="video-intro" autoplay loop muted>
+            <source src="assets/mp4/putnam3.mp4" type="video/mp4">
+          </video>
+
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            <!-- Content -->
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <strong>SDN KEPUTRAN 06 PEKALONGAN</strong>
+              </h1>
+
+              <h4>
+                <strong>Lead To A Brighter Future</strong>
+              </h4>
+
+              <a href="sambutan.php" class="btn purple-gradient">KUNJUNGI
+                <i class="fas fa-graduation-cap ml-2"></i>
+              </a>
+            </div>
+            <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+      <!--/fourth slide-->
+
+      <!--fifth slide-->
+      <div class="carousel-item">
+        <div class="view">
+
+          <!--Video source-->
+          <video class="video-intro" autoplay loop muted>
+            <source src="assets/mp4/putnam3.mp4" type="video/mp4">
+          </video>
+
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            <!-- Content -->
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <strong>SDN KEPUTRAN 06 PEKALONGAN</strong>
+              </h1>
+
+              <h4>
+                <strong>Lead To A Brighter Future</strong>
+              </h4>
+
+              <a href="sambutan.php" class="btn purple-gradient">KUNJUNGI
+                <i class="fas fa-graduation-cap ml-2"></i>
+              </a>
+            </div>
+            <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+      <!--/fifth slide-->
 
     </div>
     <!--/.Slides-->
@@ -424,7 +496,7 @@ $query1 = mysqli_query($koneksi, "SELECT judul, isi, tgla, foto, tmpt, wkt FROM 
     <!--Copyright-->
     <div class="footer-copyright py-3">
       © 2020 Copyright:
-      <a href="#" target="_blank"> TITIK KOMA DEVELOP </a>
+      <a href="#" target="_blank"> KUMBANG GADING DEVELOP </a>
     </div>
     <!--/.Copyright-->
 

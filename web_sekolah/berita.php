@@ -1,7 +1,7 @@
 <?php 
 require_once 'koneksi.php';
 
-$query = mysqli_query($koneksi, "SELECT judul, isi, tgla, foto FROM tbl_berita");
+$query = mysqli_query($koneksi, "SELECT id, judul, isi, tgla, foto FROM tbl_berita");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -73,7 +73,7 @@ $query = mysqli_query($koneksi, "SELECT judul, isi, tgla, foto FROM tbl_berita")
             <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" href="agenda.php">AGENDA</a>
               <a class="dropdown-item" href="pengumuman.php">PENGUMUMAN</a>
-              <a class="dropdown-item" href="https://corona.pekalongankota.go.id/">COVID 19</a>
+              <a class="dropdown-item" href="https://corona.pekalongankota.go.id/" target="_blank">COVID 19</a>
             </div>
           </li>
           <li class="nav-item">
@@ -151,8 +151,7 @@ $query = mysqli_query($koneksi, "SELECT judul, isi, tgla, foto FROM tbl_berita")
                   <h5 class="card-title"><?= $row['judul'] ?></h5>
                   <!--Text-->
                   <p class="card-text"><i class="far fa-calendar-alt"></i><?= $row['tgla'] ?></p>
-                  <button type="button" class="btn btn-outline-default btn-rounded waves-effect"><i class="far fa-gem mr-2" aria-hidden="true"></i>KUNJUNGI</button>
-
+                  <a href="detailberita.php?id=<?= $row['id'] ?>" class="btn btn-outline-default btn-rounded waves-effect"><i class="far fa-gem mr-2" aria-hidden="true"></i>KUNJUNGI</a>
                 </div>
                 <!--/.Card content-->
               
