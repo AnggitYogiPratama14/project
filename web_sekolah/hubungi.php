@@ -68,7 +68,7 @@
             <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" href="agenda.php">AGENDA</a>
               <a class="dropdown-item" href="pengumuman.php">PENGUMUMAN</a>
-              <a class="dropdown-item" href="https://corona.pekalongankota.go.id/">COVID 19</a>
+              <a class="dropdown-item" href="https://corona.pekalongankota.go.id/" target="_blank">COVID 19</a>
             </div>
           </li>
           <li class="nav-item">

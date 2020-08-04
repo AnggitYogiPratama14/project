@@ -1,3 +1,13 @@
+<?php 
+require_once 'koneksi.php';
+
+if(!isset($_GET['id']) || $_GET['id'] == '') header('Location: dataguru.php');
+
+$id = $_GET['id'];
+$query = mysqli_query($koneksi, "SELECT id, nama, j_kelamin, t_lahir, tgl_lahir, s_pegawai, nip, pendidikan, univ, alamat, email, telp, foto FROM tbl_guru WHERE id = $id");
+
+$row = mysqli_fetch_assoc($query);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +15,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>SDN KEPUTRAN 06</title>
+  <title>SDN KEPUTRAN 06 PEKALONGAN</title>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
   <!-- Bootstrap core CSS -->
@@ -105,7 +115,7 @@
         <div class="card-body text-white text-center py-5 px-5 my-5">
           <img src="assets/mp4/big.png" class="animated bounce infinite" alt="Transparent MDB Logo" id="animated-img1" width="20%">
           <h1 class="mb-4">
-            <strong>SEJARAH</strong>
+            <strong>DATA DETAIL PENDIDIK</strong>
           </a>
 
         </div>
@@ -113,98 +123,73 @@
       </section>
       <!--Section: Jumbotron-->
 
-      <!--Section: Cards-->
-      <section class="pt-5">
+      <br><br>
 
-        <!-- Heading & Description -->
-        <div class="wow fadeIn">
-          <!--Section heading-->
-          <h2 class="h1 text-center mb-5">SEJARAH SDN KEPUTRAN 06 PEKALONGAN</h2>
-        </div>
-        <!-- Heading & Description -->
-
-        <!--Grid row-->
-        <div class="row wow fadeIn">
-
-          <!--Grid column-->
-          <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
-            <h3 class="mb-3 font-weight-bold dark-grey-text">
-              <strong>SDN KEPUTRAN 06 PEKALONGAN</strong>
-            </h3>
-            <hr class="mb-1">
-            <p>
-              <strong>ASSALAMU ALAIKUM WR.WB</strong>
-            </p>
-            <p class="grey-text" align="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid expedita tenetur voluptate, 
-              corrupti qui perspiciatis sint enim placeat doloremque obcaecati illum facere ducimus id architecto, quaerat commodi. 
-              Iure, cupiditate reiciendis.</p>
-            <p>
-              <strong>WASSALAMU ALAIKUM WR.WB</strong>
-            </p>
-          </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-lg-5 col-xl-4 mb-4">
-            <!--Featured image-->
-            <div class="view overlay rounded z-depth-1">
-              <img src="https://mdbootstrap.com/wp-content/uploads/2017/11/brandflow-tutorial-fb.jpg" class="img-fluid"
-                alt="">
-              <a href="https://mdbootstrap.com/education/tech-marketing/automated-app-introduction/" target="_blank">
-                <div class="mask rgba-white-slight"></div>
-              </a>
-            </div>
-          </div>
-          <!--Grid column-->
-
-        </div>
-        <!--Grid row-->
-
-        <hr class="mb-5">
-        <br>
-
-        <!--Pagination-->
-        <!-- <nav class="d-flex justify-content-center wow fadeIn">
-          <ul class="pagination pg-blue">
-
-            
-            <li class="page-item disabled">
-              <a class="page-link" href="#" aria-label="Previous">
-                <span aria-hidden="true">&laquo;</span>
-                <span class="sr-only">Previous</span>
-              </a>
-            </li>
-
-            <li class="page-item active">
-              <a class="page-link" href="#">1
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#">2</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#">3</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#">4</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#">5</a>
-            </li>
-
-            <li class="page-item">
-              <a class="page-link" href="#" aria-label="Next">
-                <span aria-hidden="true">&raquo;</span>
-                <span class="sr-only">Next</span>
-              </a>
-            </li>
-          </ul>
-        </nav> -->
-        <!--Pagination-->
-
-      </section>
-      <!--Section: Cards-->
+      <!-- this content here -->
+      <table class="table table-stripped">
+          <tr>
+            <td><b>Foto</b></td>
+            <td>:</td>
+            <td><img src="images/guru/<?= $row['foto'] ?>" alt="<?= $row['nama'] ?>" width="25%" class="img-thumbnail"></td>
+          </tr>
+          <tr>
+            <td><b>Nama</b></td>
+            <td>:</td>
+            <td><?= $row['nama'] ?></td>
+          </tr>
+          <tr>
+            <td><b>Jenis Kelamin</b></td>
+            <td>:</td>
+            <td>
+              <?= $row['j_kelamin'] == 'L' ? 'Laki Laki' : '' ?>
+              <?= $row['j_kelamin'] == 'P' ? 'Perempuan' : '' ?>
+            </td>
+          </tr>
+          <tr>
+            <td><b>Tempat, Tanggal Lahir</b></td>
+            <td>:</td>
+            <td><?= $row['t_lahir'] ?>, <?= $row['tgl_lahir'] ?></td>
+          </tr>
+          <tr>
+            <td><b>Status Pegawai</b></td>
+            <td>:</td>
+            <td><?= $row['s_pegawai'] ?></td>
+          </tr>
+          <tr>
+            <td><b>NIP</b></td>
+            <td>:</td>
+            <td><?= $row['nip'] ?></td>
+          </tr>
+          <tr>
+            <td><b>Pendidikan</b></td>
+            <td>:</td>
+            <td><?= $row['pendidikan'] ?></td>
+          </tr>
+          <tr>
+            <td><b>Universitas</b></td>
+            <td>:</td>
+            <td><?= $row['univ'] ?></td>
+          </tr>
+          <tr>
+            <td><b>Alamat</b></td>
+            <td>:</td>
+            <td><?= $row['alamat'] ?></td>
+          </tr>
+          <tr>
+            <td><b>Email</b></td>
+            <td>:</td>
+            <td><?= $row['email'] ?></td>
+          </tr>
+          
+          <tr>
+            <td><b>Telephon</b></td>
+            <td>:</td>
+            <td><?= $row['telp'] ?></td>
+          </tr>
+          <td>
+            <a href="dataguru.php" class="btn btn-secondary btn-sm">KEMBALI</a>
+          </td>
+        </table>
 
     </div>
   </main>

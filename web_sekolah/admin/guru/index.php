@@ -54,10 +54,8 @@ $active = 'master';
 						            <th>No</th>
 						            <th width="50px">Foto</th>
 						            <th>Nama</th>
-						            <th>Jenis Kelamin</th>
 									<th>Tanggal Lahir</th>
 									<th>NIP</th>
-						            <th>Email</th>
 									<th>Telephon</th>
 									<th>Aksi</th>
 						        </tr>
@@ -68,10 +66,8 @@ $active = 'master';
 										<td><?= $no++ ?></td>
 										<td><img src="../../images/guru/<?= $row['foto'] ?>" alt="" width="100%" class="img-thumbnail"></td>
 										<td><a href="detail.php?id=<?= $row['id'] ?>"><?= $row['nama'] ?></a></td>
-										<td><?= $row['j_kelamin'] ?></td>
 										<td><?= $row['tgl_lahir'] ?></td>
 										<td><?= $row['nip'] ?></td>
-										<td><?= $row['email'] ?></td>
 										<td><?= $row['telp'] ?></td>
 										<td>
 											<a href="ubah.php?id=<?= $row['id'] ?>" class="btn btn-success btn-sm">Ubah</a>

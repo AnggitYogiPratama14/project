@@ -1,8 +1,8 @@
 <?php 
 require_once 'koneksi.php';
 
-$query = mysqli_query($koneksi, "SELECT judul, isi, tgla, foto FROM tbl_berita LIMIT 3");
-$query1 = mysqli_query($koneksi, "SELECT judul, isi, tgla, foto, tmpt, wkt FROM tbl_agenda LIMIT 3");
+$query = mysqli_query($koneksi, "SELECT id, judul, isi, tgla, foto FROM tbl_berita LIMIT 3");
+$query1 = mysqli_query($koneksi, "SELECT id, judul, isi, tgla, foto, tmpt, wkt FROM tbl_agenda LIMIT 3");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -86,7 +86,7 @@ $query1 = mysqli_query($koneksi, "SELECT judul, isi, tgla, foto, tmpt, wkt FROM 
             <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" href="agenda.php">AGENDA</a>
               <a class="dropdown-item" href="pengumuman.php">PENGUMUMAN</a>
-              <a class="dropdown-item" href="https://corona.pekalongankota.go.id/">COVID 19</a>
+              <a class="dropdown-item" href="https://corona.pekalongankota.go.id/" target="_blank">COVID 19</a>
             </div>
           </li>
           <li class="nav-item">
@@ -117,6 +117,8 @@ $query1 = mysqli_query($koneksi, "SELECT judul, isi, tgla, foto, tmpt, wkt FROM 
       <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
       <li data-target="#carousel-example-1z" data-slide-to="1"></li>
       <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+      <li data-target="#carousel-example-1z" data-slide-to="3"></li>
+      <li data-target="#carousel-example-1z" data-slide-to="4"></li>
     </ol>
     <!--/.Indicators-->
 
@@ -229,6 +231,76 @@ $query1 = mysqli_query($koneksi, "SELECT judul, isi, tgla, foto, tmpt, wkt FROM 
       </div>
       <!--/Third slide-->
 
+      <!--fourth slide-->
+      <div class="carousel-item">
+        <div class="view">
+
+          <!--Video source-->
+          <video class="video-intro" autoplay loop muted>
+            <source src="assets/mp4/putnam3.mp4" type="video/mp4">
+          </video>
+
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            <!-- Content -->
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <strong>SDN KEPUTRAN 06 PEKALONGAN</strong>
+              </h1>
+
+              <h4>
+                <strong>Lead To A Brighter Future</strong>
+              </h4>
+
+              <a href="sambutan.php" class="btn purple-gradient">KUNJUNGI
+                <i class="fas fa-graduation-cap ml-2"></i>
+              </a>
+            </div>
+            <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+      <!--/fourth slide-->
+
+      <!--fifth slide-->
+      <div class="carousel-item">
+        <div class="view">
+
+          <!--Video source-->
+          <video class="video-intro" autoplay loop muted>
+            <source src="assets/mp4/putnam3.mp4" type="video/mp4">
+          </video>
+
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            <!-- Content -->
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <strong>SDN KEPUTRAN 06 PEKALONGAN</strong>
+              </h1>
+
+              <h4>
+                <strong>Lead To A Brighter Future</strong>
+              </h4>
+
+              <a href="sambutan.php" class="btn purple-gradient">KUNJUNGI
+                <i class="fas fa-graduation-cap ml-2"></i>
+              </a>
+            </div>
+            <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+      <!--/fifth slide-->
+
     </div>
     <!--/.Slides-->
 
@@ -257,9 +329,7 @@ $query1 = mysqli_query($koneksi, "SELECT judul, isi, tgla, foto, tmpt, wkt FROM 
           <div class="wow fadeIn">
               <!--Section heading-->
               <h3 class="text-left mb-5">BERITA</h3>
-          </div>
-
-          <hr class="mb-5">
+          </div> <br>
 
           <div class="row">
             <?php while($row = mysqli_fetch_assoc($query)) : ?>
@@ -283,17 +353,22 @@ $query1 = mysqli_query($koneksi, "SELECT judul, isi, tgla, foto, tmpt, wkt FROM 
                   <h5 class="card-title"><?= $row['judul'] ?></h5>
                   <!--Text-->
                   <p class="card-text"><i class="far fa-calendar-alt"></i><?= $row['tgla'] ?></p>
-                  <button type="button" class="btn btn-outline-default btn-rounded waves-effect"><i class="far fa-gem mr-2" aria-hidden="true"></i>KUNJUNGI</button>
+                  <a href="detailberita.php?id=<?= $row['id'] ?>" class="btn btn-outline-default btn-rounded waves-effect"><i class="far fa-gem mr-2" aria-hidden="true"></i>KUNJUNGI</a>
 
                 </div>
                 <!--/.Card content-->
               
               </div>
               <!--/.Card-->
-
+              
             </div>
             <?php endwhile; ?>
+            
           </div>
+          <div align="center">
+              <a href="berita.php" class="btn btn-outline-success waves-effect"><i class="fas fa-sun pr-2" aria-hidden="true"></i>READ MORE</a>
+          </div>
+          
 
          
          <hr class="mb-5">
@@ -303,9 +378,7 @@ $query1 = mysqli_query($koneksi, "SELECT judul, isi, tgla, foto, tmpt, wkt FROM 
           <div class="wow fadeIn">
               <!--Section heading-->
               <h3 class="text-center mb-5">AGENDA</h3>
-          </div>
-
-          <hr class="mb-5">
+          </div> <br>
 
           <div class="row">
             <?php while($row1 = mysqli_fetch_assoc($query1)) : ?>
@@ -331,7 +404,7 @@ $query1 = mysqli_query($koneksi, "SELECT judul, isi, tgla, foto, tmpt, wkt FROM 
                   <p class="card-text"><i class="far fa-calendar-alt"></i><?= $row1['tgla'] ?></p>
                   <p class="card-text"><i class="far fa-clock"></i><?= $row1['wkt'] ?></p>
                   <p class="card-text"><i class="fas fa-map-marker-alt"></i><?= $row1['tmpt'] ?></p>
-                  <button type="button" class="btn btn-outline-primary waves-effect"><i class="fas fa-sun pr-2" aria-hidden="true"></i>KUNJUNGI</button>
+                  <a href="detailagenda.php?id=<?= $row['id'] ?>" class="btn btn-outline-primary waves-effect"><i class="fas fa-sun pr-2" aria-hidden="true"></i>KUNJUNGI</a>
 
                 </div>
                 <!--/.Card content-->
@@ -342,6 +415,10 @@ $query1 = mysqli_query($koneksi, "SELECT judul, isi, tgla, foto, tmpt, wkt FROM 
             </div>
             <?php endwhile; ?>
           </div>
+          <div align="center">
+              <a href="Agenda.php" class="btn btn-outline-success waves-effect"><i class="fas fa-sun pr-2" aria-hidden="true"></i>READ MORE</a>
+          </div>
+         <hr class="mb-5">
       </section>
 
     </div>
@@ -424,7 +501,7 @@ $query1 = mysqli_query($koneksi, "SELECT judul, isi, tgla, foto, tmpt, wkt FROM 
     <!--Copyright-->
     <div class="footer-copyright py-3">
       © 2020 Copyright:
-      <a href="#" target="_blank"> TITIK KOMA DEVELOP </a>
+      <a href="#" target="_blank"> KUMBANG GADING DEVELOP </a>
     </div>
     <!--/.Copyright-->
 

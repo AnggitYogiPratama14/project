@@ -6,7 +6,7 @@ $base_url = "http://localhost/project/web_sekolah/"
 	<div class="container">
 		<ul class="navbar-nav">
 			<li class="nav-item">
-				<a class="nav-link <?= $active == 'dashboard' ? 'active' : '' ?>" href="<?= $base_url ?>admin">Dashboard</a>
+				<a class="nav-link <?= $active == 'dashboard' ? 'active' : '' ?>" href="<?= $base_url ?>admin/index.php">Dashboard</a>
 			</li>
 			<li class="nav-item dropdown">
 				<a class="nav-link <?= $active == 'master' ? 'active' : '' ?> dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Data Master</a>

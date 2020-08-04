@@ -53,8 +53,13 @@
 							<div class="row">
 								<div class="col">
 									<div class="form-group">
-										<label for="no_hp">Status Pegawai</label>
-										<input type="text" class="form-control" id="s_pegawai" placeholder="Status Pegawai" autocomplete="off" required="required" name="s_pegawai">
+									<label for="s_pegawai">Status Pegawai</label>
+										<select name="s_pegawai" id="s_pegawai" class="form-control">
+											<option value="NO_DATA">---PILIH STATUS---</option>
+											<option value="PNS">PNS</option>
+											<option value="GTT">GTT</option>
+											<option value="PTT">PTT</option>
+										</select>
 									</div>
 								</div>
 								<div class="col">

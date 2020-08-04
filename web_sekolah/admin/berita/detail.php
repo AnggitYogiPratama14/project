@@ -60,7 +60,7 @@ $active = 'berita';
 							<tr>
 								<td><b>Foto</b></td>
 								<td>:</td>
-								<td><img src="../../images/agenda/<?= $row['foto'] ?>" alt="<?= $row['judul'] ?>" width="100%" class="img-thumbnail"></td>
+								<td><img src="../../images/berita/<?= $row['foto'] ?>" alt="<?= $row['judul'] ?>" width="100%" class="img-thumbnail"></td>
 							</tr>
 							<tr>
 								<td><b></td>
