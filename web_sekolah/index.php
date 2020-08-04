@@ -1,8 +1,8 @@
 <?php 
 require_once 'koneksi.php';
 
-$query = mysqli_query($koneksi, "SELECT judul, isi, tgla, foto FROM tbl_berita LIMIT 3");
-$query1 = mysqli_query($koneksi, "SELECT judul, isi, tgla, foto, tmpt, wkt FROM tbl_agenda LIMIT 3");
+$query = mysqli_query($koneksi, "SELECT id, judul, isi, tgla, foto FROM tbl_berita LIMIT 3");
+$query1 = mysqli_query($koneksi, "SELECT id, judul, isi, tgla, foto, tmpt, wkt FROM tbl_agenda LIMIT 3");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -329,9 +329,7 @@ $query1 = mysqli_query($koneksi, "SELECT judul, isi, tgla, foto, tmpt, wkt FROM 
           <div class="wow fadeIn">
               <!--Section heading-->
               <h3 class="text-left mb-5">BERITA</h3>
-          </div>
-
-          <hr class="mb-5">
+          </div> <br>
 
           <div class="row">
             <?php while($row = mysqli_fetch_assoc($query)) : ?>
@@ -355,17 +353,22 @@ $query1 = mysqli_query($koneksi, "SELECT judul, isi, tgla, foto, tmpt, wkt FROM 
                   <h5 class="card-title"><?= $row['judul'] ?></h5>
                   <!--Text-->
                   <p class="card-text"><i class="far fa-calendar-alt"></i><?= $row['tgla'] ?></p>
-                  <button type="button" class="btn btn-outline-default btn-rounded waves-effect"><i class="far fa-gem mr-2" aria-hidden="true"></i>KUNJUNGI</button>
+                  <a href="detailberita.php?id=<?= $row['id'] ?>" class="btn btn-outline-default btn-rounded waves-effect"><i class="far fa-gem mr-2" aria-hidden="true"></i>KUNJUNGI</a>
 
                 </div>
                 <!--/.Card content-->
               
               </div>
               <!--/.Card-->
-
+              
             </div>
             <?php endwhile; ?>
+            
           </div>
+          <div align="center">
+              <a href="berita.php" class="btn btn-outline-success waves-effect"><i class="fas fa-sun pr-2" aria-hidden="true"></i>READ MORE</a>
+          </div>
+          
 
          
          <hr class="mb-5">
@@ -375,9 +378,7 @@ $query1 = mysqli_query($koneksi, "SELECT judul, isi, tgla, foto, tmpt, wkt FROM 
           <div class="wow fadeIn">
               <!--Section heading-->
               <h3 class="text-center mb-5">AGENDA</h3>
-          </div>
-
-          <hr class="mb-5">
+          </div> <br>
 
           <div class="row">
             <?php while($row1 = mysqli_fetch_assoc($query1)) : ?>
@@ -403,7 +404,7 @@ $query1 = mysqli_query($koneksi, "SELECT judul, isi, tgla, foto, tmpt, wkt FROM 
                   <p class="card-text"><i class="far fa-calendar-alt"></i><?= $row1['tgla'] ?></p>
                   <p class="card-text"><i class="far fa-clock"></i><?= $row1['wkt'] ?></p>
                   <p class="card-text"><i class="fas fa-map-marker-alt"></i><?= $row1['tmpt'] ?></p>
-                  <button type="button" class="btn btn-outline-primary waves-effect"><i class="fas fa-sun pr-2" aria-hidden="true"></i>KUNJUNGI</button>
+                  <a href="detailagenda.php?id=<?= $row['id'] ?>" class="btn btn-outline-primary waves-effect"><i class="fas fa-sun pr-2" aria-hidden="true"></i>KUNJUNGI</a>
 
                 </div>
                 <!--/.Card content-->
@@ -414,6 +415,10 @@ $query1 = mysqli_query($koneksi, "SELECT judul, isi, tgla, foto, tmpt, wkt FROM 
             </div>
             <?php endwhile; ?>
           </div>
+          <div align="center">
+              <a href="Agenda.php" class="btn btn-outline-success waves-effect"><i class="fas fa-sun pr-2" aria-hidden="true"></i>READ MORE</a>
+          </div>
+         <hr class="mb-5">
       </section>
 
     </div>

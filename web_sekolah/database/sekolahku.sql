@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 03 Agu 2020 pada 07.45
+-- Generation Time: 03 Agu 2020 pada 20.23
 -- Versi Server: 10.0.17-MariaDB
 -- PHP Version: 5.6.14
 
@@ -31,15 +31,6 @@ CREATE TABLE `file` (
   `name` varchar(200) NOT NULL,
   `file` varchar(500) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data untuk tabel `file`
---
-
-INSERT INTO `file` (`file_id`, `name`, `file`) VALUES
-(1, '1', 'files/1.PNG'),
-(2, 'Ttorial', 'files/Ttorial.txt'),
-(3, 'Anggit Yogi Pratama_SMA ISLAM AHMAD YANI BATANG_kelas prog (13', 'files/Anggit Yogi Pratama_SMA ISLAM AHMAD YANI BATANG_kelas prog (13.30)B.pdf');
 
 -- --------------------------------------------------------
 
@@ -148,8 +139,8 @@ CREATE TABLE `tbl_guru` (
   `j_kelamin` enum('L','P') DEFAULT NULL,
   `t_lahir` varchar(50) DEFAULT NULL,
   `tgl_lahir` date DEFAULT NULL,
-  `s_pegawai` varchar(10) NOT NULL,
-  `nip` int(18) DEFAULT NULL,
+  `s_pegawai` enum('NO_DATA','PNS','GTT','PTT') DEFAULT NULL,
+  `nip` int(25) DEFAULT NULL,
   `pendidikan` varchar(50) NOT NULL,
   `univ` varchar(50) NOT NULL,
   `alamat` text,
@@ -163,7 +154,7 @@ CREATE TABLE `tbl_guru` (
 --
 
 INSERT INTO `tbl_guru` (`id`, `nama`, `j_kelamin`, `t_lahir`, `tgl_lahir`, `s_pegawai`, `nip`, `pendidikan`, `univ`, `alamat`, `email`, `telp`, `foto`) VALUES
-(11, 'Dhimas Oeka Aji Wicaksana', 'L', 'Batang', '1997-03-31', 'GTT', 0, 'S1 Guru Sekolah Dasar', 'Universitas PGRI Semarang', 'Jl Dr Sutomo Gang Waru No 37 Watesalit Batang ', 'dhimaswicaksana12@gmail.com', '0895412554407', 'dhimas-oeka-aji-wicaksana.jpeg'),
+(11, 'Dhimas Oeka Aji Wicaksana', 'L', 'Batang', '1997-03-31', 'PNS', 0, 'S1 Guru Sekolah Dasar', 'Universitas PGRI Semarang', 'Jl Dr Sutomo Gang Waru No 37 Watesalit Batang ', 'dhimaswicaksana12@gmail.com', '0895412554407', 'dhimas-oeka-aji-wicaksana.jpeg'),
 (12, 'Hadza Muhammad Amirul Bahar', 'L', 'Batang', '1995-11-29', 'GTT', 0, 'S1 Guru Sekolah Dasar', 'Universitas PGRI Semarang', 'Jl Sunan Ampel kebulen gg 13 no. 30 Pekalongan Barat, Pekalongan', 'hadzamuhammadamirulbahar@gmail.com', '08986594554', '.jpg');
 
 -- --------------------------------------------------------
@@ -442,7 +433,7 @@ ALTER TABLE `tbl_bukutamu`
 -- AUTO_INCREMENT for table `tbl_guru`
 --
 ALTER TABLE `tbl_guru`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 --
 -- AUTO_INCREMENT for table `tbl_kategori_agenda`
 --

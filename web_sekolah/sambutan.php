@@ -129,12 +129,12 @@
           <!--Grid column-->
           <div class="col-lg-5 col-xl-4 mb-4">
             <!--Featured image-->
-            <div class="view overlay rounded z-depth-1-half">
-              <div class="view overlay">
-                <div class="embed-responsive embed-responsive-16by9">
-                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/OnfYLBNvrPw" allowfullscreen></iframe>
-                </div>
-              </div>
+            <div class="view overlay rounded">
+              <img src="https://mdbootstrap.com/wp-content/uploads/2017/11/brandflow-tutorial-fb.jpg" class="img-fluid"
+                alt="">
+              <!-- <a href="https://mdbootstrap.com/education/tech-marketing/automated-app-introduction/" target="_blank"> -->
+                <div class="mask rgba-white-slight"></div>
+              </a>
             </div>
           </div>
           <!--Grid column-->
