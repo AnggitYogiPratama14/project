@@ -130,7 +130,7 @@
           <div class="col-lg-5 col-xl-4 mb-4">
             <!--Featured image-->
             <div class="view overlay rounded">
-              <img src="https://mdbootstrap.com/wp-content/uploads/2017/11/brandflow-tutorial-fb.jpg" class="img-fluid"
+              <img src="assets/mp4/big.png" class="img-fluid"
                 alt="">
               <!-- <a href="https://mdbootstrap.com/education/tech-marketing/automated-app-introduction/" target="_blank"> -->
                 <div class="mask rgba-white-slight"></div>
