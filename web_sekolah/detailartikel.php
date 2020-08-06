@@ -4,7 +4,7 @@ require_once 'koneksi.php';
 if(!isset($_GET['id']) || $_GET['id'] == '') header('Location: artikel.php');
 
 $id = $_GET['id'];
-$query = mysqli_query($koneksi, "SELECT id, judul, isi, tanggal, foto FROM tbl_artikel");
+$query = mysqli_query($koneksi, "SELECT id, judul, isi, tanggal, foto FROM tbl_artikel WHERE id = $id");
 
 $row = mysqli_fetch_assoc($query);
 ?>

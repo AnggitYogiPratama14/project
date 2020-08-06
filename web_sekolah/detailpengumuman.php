@@ -4,7 +4,7 @@ require_once 'koneksi.php';
 if(!isset($_GET['id']) || $_GET['id'] == '') header('Location: Pengumuman.php');
 
 $id = $_GET['id'];
-$query = mysqli_query($koneksi, "SELECT id, judul, isi, tgla, foto FROM tbl_pengumuman");
+$query = mysqli_query($koneksi, "SELECT id, judul, isi, tgla, foto FROM tbl_pengumuman WHERE id = $id");
 
 $row = mysqli_fetch_assoc($query);
 ?>
@@ -150,7 +150,7 @@ $row = mysqli_fetch_assoc($query);
 								<td><b></td>
 								<td></td>
 								<td>
-									<a href="Agenda.php" class="btn btn-secondary btn-sm">Kembali</a>
+									<a href="Pengumuman.php" class="btn btn-secondary btn-sm">Kembali</a>
 								</td>
 							</tr>
 						</table>
