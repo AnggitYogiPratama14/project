@@ -4,7 +4,7 @@ require_once 'koneksi.php';
 if(!isset($_GET['id']) || $_GET['id'] == '') header('Location: Agenda.php');
 
 $id = $_GET['id'];
-$query = mysqli_query($koneksi, "SELECT id, judul, isi, tgla, tmpt, wkt, foto FROM tbl_agenda");
+$query = mysqli_query($koneksi, "SELECT id, judul, isi, tgla, tmpt, wkt, foto FROM tbl_agenda WHERE id = $id");
 
 $row = mysqli_fetch_assoc($query);
 ?>
