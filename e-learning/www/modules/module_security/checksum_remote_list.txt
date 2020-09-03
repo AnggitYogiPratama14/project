@@ -1,0 +1,897 @@
+<!doctype html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="icon" type="image/png" href="https://www.efrontlearning.com/wp-content/themes/efrontlearning-website/dist/images/O_200x200.png" sizes="16x16"/>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500" media="nope!" onload="this.media='all'">
+	<link rel="stylesheet" type="text/css" href="https://www.efrontlearning.com/wp-content/themes/efrontlearning-website/dist/css/main.css">
+	<!-- Google Analytics -->
+<script>
+window.ga = window.ga || function () {
+  (ga.q = ga.q || []).push(arguments)
+};
+ga.l = +new Date;
+ga('create', 'UA-1079444-2', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+
+<!-- Google Tag Manager -->
+<script>(function (w, d, s, l, i) {
+w[l] = w[l] || [];
+w[l].push({
+  'gtm.start':
+    new Date().getTime(), event: 'gtm.js'
+});
+var f = d.getElementsByTagName(s)[0],
+  j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+j.async = true;
+j.src =
+  'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-NSRN6S');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NSRN6S"
+          height="0"
+          width="0"
+          style="display:none;visibility:hidden">
+  </iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+	<title>A fully adaptable LMS solution for modern enterprise training | eFront LMS</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v9.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="eFront is a leading Learning Management System for employee and extended enterprise training. Optimize and scale your training today!"/>
+<link rel="canonical" href="https://www.efrontlearning.com/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="A fully adaptable LMS solution for modern enterprise training | eFront LMS" />
+<meta property="og:description" content="eFront is a leading Learning Management System for employee and extended enterprise training. Optimize and scale your training today!" />
+<meta property="og:url" content="https://www.efrontlearning.com/" />
+<meta property="og:site_name" content="eFront Learning" />
+<meta property="og:image" content="https://www.efrontlearning.com/wp-content/uploads/2019/04/efront-fb-cover-1.png" />
+<meta property="og:image:secure_url" content="https://www.efrontlearning.com/wp-content/uploads/2019/04/efront-fb-cover-1.png" />
+<meta property="og:image:width" content="821" />
+<meta property="og:image:height" content="312" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="eFront is a leading Learning Management System for employee and extended enterprise training. Optimize and scale your training today!" />
+<meta name="twitter:title" content="A fully adaptable LMS solution for modern enterprise training | eFront LMS" />
+<meta name="twitter:image" content="https://www.efrontlearning.com/wp-content/uploads/2019/04/efront-fb-cover-1.png" />
+<script type='application/ld+json'>{"@context":"https:\/\/schema.org","@type":"WebSite","@id":"#website","url":"https:\/\/www.efrontlearning.com\/","name":"eFront Learning","potentialAction":{"@type":"SearchAction","target":"https:\/\/www.efrontlearning.com\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="eFront Learning &raquo; Feed" href="https://www.efrontlearning.com/feed" />
+<link rel="alternate" type="application/rss+xml" title="eFront Learning &raquo; Comments Feed" href="https://www.efrontlearning.com/comments/feed" />
+<link rel="alternate" type="application/rss+xml" title="eFront Learning &raquo; Homepage Comments Feed" href="https://www.efrontlearning.com/home/feed" />
+<link rel='https://api.w.org/' href='https://www.efrontlearning.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.efrontlearning.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.efrontlearning.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='shortlink' href='https://www.efrontlearning.com/' />
+<link rel="alternate" type="application/json+oembed" href="https://www.efrontlearning.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.efrontlearning.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.efrontlearning.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.efrontlearning.com%2F&#038;format=xml" />
+</head>
+<body>
+
+<div class="container-fluid">
+	<div class="index">
+		<div class="content-wrapper header page-nav">
+			<div class="main-header">
+				<nav class="navbar navbar-default navbar-fixed-top">
+					<div class="container">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar top-bar"></span>
+								<span class="icon-bar middle-bar"></span>
+								<span class="icon-bar bottom-bar"></span>
+							</button>
+							<div class="book-demo-wrapper visible-xs-inline-block">
+								<a class="book-demo btn__default btn__default--blue btn__default--rounded-5 btn__default--tiny" href="/demo">
+									Book demo								</a>
+							</div>
+							<div class="navbar-brand">
+								<div class="logo-container">
+									<a href="/">
+										<img src="https://www.efrontlearning.com/wp-content/themes/efrontlearning-website/dist/images/efront_logo.svg" />
+									</a>
+								</div>
+							</div>
+						</div>
+						<div id="navbar" class="collapse navbar-collapse navbar-right">
+							<ul class="nav navbar-nav navbar-right">
+																	<li >
+										<a href="/features"
+																																	>
+											Features										</a>
+									</li>
+																	<li >
+										<a href="/pricing"
+																																	>
+											Pricing										</a>
+									</li>
+																	<li >
+										<a href="/solutions"
+																																	>
+											Solutions										</a>
+									</li>
+																	<li >
+										<a href="/blog/"
+																																	>
+											Blog										</a>
+									</li>
+																	<li  class="try-button-container" >
+										<a href="/demo"
+											 class="try-button" 																						 title="Schedule an LMS demo – eFront LMS" >
+											Schedule a demo										</a>
+									</li>
+															</ul>
+						</div><!-- /.navbar-collapse -->
+					</div>
+				</nav>
+			</div>
+		</div>
+<div class="hero-container">
+  <div class="motto container">
+    <h2 class="motto__header">
+    One learning platform, limitless functionality
+    </h2>
+    <h1 class="motto__subheader">
+    eFront is the enterprise learning management system engineered to support the most demanding and complex learning ecosystems
+    </h1>
+    <a href="/demo" title="Schedule an LMS demo – eFront LMS" class="btn__default btn__default--blue btn__default--rounded-5 motto__link font-weight-500">
+      Schedule a demo today
+    </a>
+  </div>
+</div>
+<div class="content-wrapper header">
+  <div class="row">
+    <div class="col-md-12 small-subtext text-center">
+      Blue-chip and other growing enterprises harness the power of eFront
+    </div>
+  </div>
+</div>
+<div class="content-wrapper header homepage-row">
+  <div class="row">
+    <div class="col-md-12 client-logos text-center">
+      <div class="row">
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img src="/wp-content/themes/efrontlearning-website/dist/images/logos/supermacs-logo.png" alt="Supermacs – eFront LMS customer testimonials">
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img src="/wp-content/themes/efrontlearning-website/dist/images/logos/alpha.png" alt="Alpha Bank - eFront LMS customer testimonials">
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img src="/wp-content/themes/efrontlearning-website/dist/images/logos/american-water-college.png" alt="American Water college - eFront LMS customer testimonials">
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img src="/wp-content/themes/efrontlearning-website/dist/images/logos/schneide.png" alt="Schneider Electric - eFront LMS customer testimonials">
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img src="/wp-content/themes/efrontlearning-website/dist/images/logos/carolina.png" alt="University of South Carolina - eFront LMS customer testimonials">
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img src="/wp-content/themes/efrontlearning-website/dist/images/logos/honeywell.png" alt="Honeywell - eFront LMS customer testimonials">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="content-wrapper-experience" class="content-wrapper header homepage-section">
+  <div class="row">
+    <div class="col-md-6 col-sm-12 col-md-push-6 efs-cards hidden-xs hidden-sm">
+      <div class="index__circle index__circle--blue"></div>
+      <div class="row">
+        <div class="col-md-6 col-sm-6 text-right elevate-3">
+          <div class="ef-card">
+            <div class="ef-card-icon">
+              <img src="/wp-content/themes/efrontlearning-website/dist/images/homepage/icons/control_1.svg" alt="eFront LMS hosting options">
+            </div>
+            <div>
+              <h3>
+              Choose between on-premise or private cloud hosting
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 elevate-3">
+          <div class="ef-card">
+            <div class="ef-card-icon">
+              <img src="/wp-content/themes/efrontlearning-website/dist/images/homepage/icons/control_2.svg" alt="Plugins – eFront LMS">
+            </div>
+            <div>
+              <h3>
+              Add plugins to boost your capabilities
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-4">
+          <div class="ef-card ef-card-three">
+            <div class="ef-card-icon ef-card-icon__whitelabel">
+              <img src="/wp-content/themes/efrontlearning-website/dist/images/homepage/icons/control_3.svg" alt="White label LMS - eFront">
+            </div>
+            <div>
+              <h3 class="ef-card-text__whitelabel">
+              Whitelabel eFront and make it entirely yours
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-sm-12 col-xs-12 col-md-pull-6 control-section">
+      <div class="content-wrapper__text">
+        <h2>
+        Control
+        </h2>
+        <p>
+          You know where you’re going, so we step out of your way.
+        </p>
+        <p>
+          With eFront’s powerful customization options and access to our source code, you can build an enterprise training platform unlike any other.
+        </p>
+        <div class="visible-xs visible-sm carousel-wrapper_slider">
+          <div class="text-center">
+            <div class="ef-card">
+              <div class="ef-card-icon">
+                <img src="/wp-content/themes/efrontlearning-website/dist/images/homepage/icons/control_1.svg"  alt="eFront LMS hosting options">
+              </div>
+              <div>
+                <h3>
+                Choose between on-premise or private cloud hosting
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <div class="ef-card">
+              <div class="ef-card-icon">
+                <img src="/wp-content/themes/efrontlearning-website/dist/images/homepage/icons/control_2.svg"  alt="Plugins – eFront LMS">
+              </div>
+              <div>
+                <h3>
+                Add plugins to boost your capabilities
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <div class="ef-card">
+              <div class="ef-card-icon ef-card-icon__whitelabel">
+                <img src="/wp-content/themes/efrontlearning-website/dist/images/homepage/icons/control_3.svg"  alt="White label LMS - eFront">
+              </div>
+              <div>
+                <h3 class="ef-card-text__whitelabel">
+                Whitelabel eFront and make it entirely yours
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p>
+          Starting with a private cloud or on-premise hosting and advanced functionality down to the look, feel and structure, you decide what you need your training platform to do, and eFront does it.
+        </p>
+      </div>
+      <div class="info-container text-left">
+        <a href="customizations" title="Custom eLearning software – eFront LMS" class="btn font-weight-400">
+          More about adaptability
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<div>
+  <div id="content-wrapper-security" class="content-wrapper header homepage-section">
+    <div class="row">
+      <div class="col-md-6 col-sm-12 security-wrapper hidden-xs">
+        <div class="row">
+          <div class="col-md-6 col-sm-12 col-md-offset-2 text-center">
+            <div class="ef-card ef-card-four">
+              <div class="index__circle index__circle--blue index__circle--medium"></div>
+              <div class="index__circle index__circle--orange index__circle--small"></div>
+              <div class="ef-card-icon">
+                <img src="/wp-content/themes/efrontlearning-website/dist/images/homepage/icons/security.svg" alt="Advanced security features – eFront LMS">
+              </div>
+              <div>
+                <h3>
+                Put the security of your platform first
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12 col-xs-12">
+        <div class="content-wrapper__text">
+          <h2>
+          Security
+          </h2>
+          <p>
+            eFront arms your organization with a variety of security filters and administrative tools.
+          </p>
+          <p>
+            Advanced data encryption, extensive access control, audit logs, SSO, two-factor authentication and other enterprise-grade security features keep your data and platform safe at all times.
+          </p>
+          <div class="visible-xs">
+            <div class="col-md-6 col-sm-12 security-wrapper">
+              <div class="ef-card ef-card-four">
+                <div class="index__circle index__circle--blue index__circle--medium"></div>
+                <div class="index__circle index__circle--orange index__circle--small"></div>
+                <div class="ef-card-icon">
+                  <img src="/wp-content/themes/efrontlearning-website/dist/images/homepage/icons/security.svg" alt="Advanced security features – eFront LMS">
+                </div>
+                <div>
+                  <h3>
+                  Put the security of your platform first
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="info-container">
+          <a href="security" title="Secure LMS – eFront" class="btn font-weight-400">
+            All security features
+          </a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<div id="content-wrapper-graph" class="content-wrapper header homepage-section">
+  <div class="row">
+    <div class="col-md-6 col-sm-12 text-right col-md-push-6 hidden-xs">
+      <div class="resilence-wrapper">
+        <div class="index__circle index__circle--blue">
+          <div class="index__circle index__circle--white index__circle--medium-large-oval">
+            <img src="/wp-content/themes/efrontlearning-website/dist/images/homepage/icons/resilience.svg" alt="eFront LMS Features">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-sm-12 col-md-pull-6">
+      <div class="content-wrapper__text">
+        <h2>
+        Resilience
+        </h2>
+        <div class="visible-xs">
+          <div class="resilence-wrapper">
+            <div class="index__circle index__circle--blue">
+              <div class="index__circle index__circle--white index__circle--medium-large-oval">
+                <img src="/wp-content/themes/efrontlearning-website/dist/images/homepage/icons/resilience.svg" alt="eFront LMS Features">
+              </div>
+            </div>
+          </div>
+        </div>
+        <p>
+          eFront is built for organizations with intricate learning ecosystems. And for managers who need a system that’ll go the distance.
+        </p>
+        <p>
+          From 2003 until today, we haven’t stopped expanding eFront’s functionality and reliability for a smooth learner and administrator experience. Our engineering prowess matches your highest ambitions, year after year.
+        </p>
+      </div>
+      <div class="info-container text-left">
+        <a href="features" title="Advanced LMS features – eFront" class="btn font-weight-400">
+          Explore all features
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="content-wrapper-data-stored">
+  <div class="content-wrapper header homepage-section">
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <h2 class="section-heading">
+        Where in the world is my data stored?
+        </h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="data-stored-private col-xs-12 col-sm-6 text-right d-flex align-items-center justify-content-flex-end">
+        <div class="ef-card ef-card--md ef-card--rounded" data-group="data-stored">
+          <div>
+            <div class="ef-card-icon">
+              <img src="/wp-content/themes/efrontlearning-website/dist/images/homepage/icons/private_cloud_hosting.svg" alt="Private cloud hosting – eFront LMS">
+            </div>
+            <div>
+              <h3 class="ef-card-headline">
+              Private cloud hosting
+              </h3>
+              <div class="ef-card-desc">
+                <p>
+                  We help you comply with your country’s data residency requirements and regulations by hosting your service on world-class AWS infrastructure, based in the U.S., EU, Asia and Australia
+                </p>
+                <a class="btn__default btn__default--white-blue btn__default--rounded-5 font-weight-600" href="/customizations/deployment#privatecloud" title="Private cloud hosting – eFront LMS">
+                  Learn more
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="data-stored-premise col-xs-12 col-sm-6 d-flex align-items-center">
+        <div class="ef-card ef-card--md ef-card--rounded" data-group="data-stored">
+          <div>
+            <div class="ef-card-icon">
+              <img src="/wp-content/themes/efrontlearning-website/dist/images/homepage/icons/on_premise.svg" alt="On-premise hosting – eFront LMS">
+            </div>
+            <div>
+              <h3 class="ef-card-headline">
+              On-premise hosting
+              </h3>
+              <div class="ef-card-desc">
+                <p>
+                  We give you the opportunity to host your service on your organization’s servers.
+                </p>
+                <p>
+                  eFront does not depend on third-party internet resources, so it can operate on your company's isolated intranet.
+                </p>
+                <a class="btn__default btn__default--white-blue btn__default--rounded-5 font-weight-600" href="/customizations/deployment" title="On-premise hosting – eFront LMS">
+                  Learn more
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="content-wrapper-top-features">
+  <div class="content-wrapper header homepage-section">
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <h2 class="section-heading">
+        Top features
+        </h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <div id="card-zoom-swipe" class="card-zoom-container">
+          <div class="card-zoom-card-popout"></div>
+          <div id="cards-zoom" class="cards-zoom">
+            <div class="card-zoom slide-item active animated">
+              <div class="card-zoom__img">
+                <img src="/wp-content/themes/efrontlearning-website/dist/images/homepage/icons/mobile_optimized.svg" alt="eFront LMS optimized for mobile learning">
+              </div>
+              <div class="card-zoom__img_2">
+                <img src="/wp-content/themes/efrontlearning-website/dist/images/homepage/icons/mobile_optimized.svg" alt="eFront LMS optimized for mobile learning">
+              </div>
+              <div class="card-zoom__text">
+              Mobile-optimized                        </div>
+              <div class="card-zoom__text_2">
+              Mobile-optimized                        </div>
+              <div class="card-zoom__desc">
+              Your eLearning platform is optimized for learning on the go, ready to be delivered and experienced on your users’ preferred device.                        </div>
+              <div class="card-zoom__link">
+                <a class="btn__default btn__default--white-blue btn__default--rounded-5 font-weight-600" title="eFront LMS mobile apps" href="/mobile">
+                  Learn more
+                </a>
+              </div>
+            </div>
+            <div class="card-zoom slide-item ">
+              <div class="card-zoom__img">
+                <img src="/wp-content/themes/efrontlearning-website/dist/images/homepage/icons/scalable.svg" alt="Enterprise-ready LMS - eFront">
+              </div>
+              <div class="card-zoom__img_2">
+                <img src="/wp-content/themes/efrontlearning-website/dist/images/homepage/icons/scalable.svg" alt="Enterprise-ready LMS - eFront">
+              </div>
+              <div class="card-zoom__text">
+              Built-in enterprise features                        </div>
+              <div class="card-zoom__text_2">
+              Built-in enterprise features                        </div>
+              <div class="card-zoom__desc">
+              Enjoy enterprise features like multi-tenancy, skill gap testing, and audit logs at no extra cost.                        </div>
+              <div class="card-zoom__link">
+                <a class="btn__default btn__default--white-blue btn__default--rounded-5 font-weight-600" title="Enterprise-ready LMS - eFront" href="/features#enterpriseready">
+                  Learn more
+                </a>
+              </div>
+            </div>
+            <div class="card-zoom slide-item ">
+              <div class="card-zoom__img">
+                <img src="/wp-content/themes/efrontlearning-website/dist/images/homepage/icons/apis.svg" alt="eFront LMS integrations">
+              </div>
+              <div class="card-zoom__img_2">
+                <img src="/wp-content/themes/efrontlearning-website/dist/images/homepage/icons/apis.svg" alt="eFront LMS integrations">
+              </div>
+              <div class="card-zoom__text">
+              APIs and plenty of native integrations                        </div>
+              <div class="card-zoom__text_2">
+              APIs and plenty of native integrations                        </div>
+              <div class="card-zoom__desc">
+              Take advantage of our vast capacity for integration and open up a world of functionalities and modifications for your unique training portal.                        </div>
+              <div class="card-zoom__link">
+                <a class="btn__default btn__default--white-blue btn__default--rounded-5 font-weight-600" title="eFront LMS integrations" href="/integrations">
+                  Learn more
+                </a>
+              </div>
+            </div>
+            <div class="card-zoom slide-item ">
+              <div class="card-zoom__img">
+                <img src="/wp-content/themes/efrontlearning-website/dist/images/homepage/icons/ecommerce.svg" alt="eCommerce LMS – eFront">
+              </div>
+              <div class="card-zoom__img_2">
+                <img src="/wp-content/themes/efrontlearning-website/dist/images/homepage/icons/ecommerce.svg" alt="eCommerce LMS – eFront">
+              </div>
+              <div class="card-zoom__text">
+              eCommerce-ready                        </div>
+              <div class="card-zoom__text_2">
+              eCommerce-ready                        </div>
+              <div class="card-zoom__desc">
+              Make the most of our eCommerce integrations by reselling your courses.                        </div>
+              <div class="card-zoom__link">
+                <a class="btn__default btn__default--white-blue btn__default--rounded-5 font-weight-600" title="eFront LMS for eCommerce" href="/features#ecommerce">
+                  Learn more
+                </a>
+              </div>
+            </div>
+          </div>
+          <ul class="slick-dots slider-dots">
+            <li class="slick-active">
+              <button type="button">1</button>
+            </li>
+            <li class="">
+              <button type="button">1</button>
+            </li>
+            <li class="">
+              <button type="button">1</button>
+            </li>
+            <li class="">
+              <button type="button">1</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="content-wrapper-customer-results">
+  <div class="content-wrapper header homepage-section">
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <h2 class="section-heading">
+        Customer results with eFront
+        </h2>
+      </div>
+    </div>
+    <div class="row hidden-xs">
+      <div class="col-xs-12 col-sm-12 col-md-4">
+        <div class="customer-result">
+          <div class="customer-result__icon">
+            <img src="/wp-content/themes/efrontlearning-website/dist/images/homepage/icons/quote.svg" alt="quote">
+          </div>
+          <div class="customer-result__desc">
+          The platform itself has proved to be very stable and low-maintenance from a technical point of view. Onboarding new users to the platform is very easy since it is so self intuitive.                </div>
+          <div class="customer-result__brand  ">
+            <img src="/wp-content/themes/efrontlearning-website/dist/images/logos/fujitsu.png" alt="Fujitsu - eFront customer testimonials">
+          </div>
+          <div class="customer-result__author">
+          Blaise Porter                </div>
+          <div class="customer-result__position">
+          Manager Service Excellence                </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-4">
+        <div class="customer-result">
+          <div class="customer-result__icon">
+            <img src="/wp-content/themes/efrontlearning-website/dist/images/homepage/icons/quote.svg" alt="quote">
+          </div>
+          <div class="customer-result__desc">
+          All of the other LMS’s that we researched did not have this flexibility that we required and so we were pleasantly surprised that eFront would adapt and change for us.                </div>
+          <div class="customer-result__brand customer-result__brand--second ">
+            <img src="/wp-content/themes/efrontlearning-website/dist/images/logos/emberin.png" alt="Emberin - eFront customer testimonials">
+          </div>
+          <div class="customer-result__author">
+          Robert Matovu                </div>
+          <div class="customer-result__position">
+          IT Manager                </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-4">
+        <div class="customer-result">
+          <div class="customer-result__icon">
+            <img src="/wp-content/themes/efrontlearning-website/dist/images/homepage/icons/quote.svg" alt="quote">
+          </div>
+          <div class="customer-result__desc">
+          eFront’s professional services team were able to provide extensive cosmetic and functional changes to make a tight integration with our supporting website.                </div>
+          <div class="customer-result__brand  ">
+            <img src="/wp-content/themes/efrontlearning-website/dist/images/logos/iep.png" alt="IEP - eFront customer testimonials">
+          </div>
+          <div class="customer-result__author">
+          Gregory Short                </div>
+          <div class="customer-result__position">
+          President at IEP                </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div id="customer_results" class="visible-xs">
+          <div class="customer-result">
+            <div class="customer-result__icon">
+              <img src="/wp-content/themes/efrontlearning-website/dist/images/homepage/icons/quote.svg" alt="quote">
+            </div>
+            <div class="customer-result__desc">
+            The platform itself has proved to be very stable and low-maintenance from a technical point of view. Onboarding new users to the platform is very easy since it is so self intuitive.                </div>
+            <div class="customer-result__brand  ">
+              <img src="/wp-content/themes/efrontlearning-website/dist/images/logos/fujitsu.png" alt="Fujitsu - eFront customer testimonials">
+            </div>
+            <div class="customer-result__author">
+            Blaise Porter                </div>
+            <div class="customer-result__position">
+            Manager Service Excellence                </div>
+          </div>
+          <div class="customer-result">
+            <div class="customer-result__icon">
+              <img src="/wp-content/themes/efrontlearning-website/dist/images/homepage/icons/quote.svg" alt="quote">
+            </div>
+            <div class="customer-result__desc">
+            All of the other LMS’s that we researched did not have this flexibility that we required and so we were pleasantly surprised that eFront would adapt and change for us.                </div>
+            <div class="customer-result__brand customer-result__brand--second ">
+              <img src="/wp-content/themes/efrontlearning-website/dist/images/logos/emberin.png" alt="Emberin - eFront customer testimonials">
+            </div>
+            <div class="customer-result__author">
+            Robert Matovu                </div>
+            <div class="customer-result__position">
+            IT Manager                </div>
+          </div>
+          <div class="customer-result">
+            <div class="customer-result__icon">
+              <img src="/wp-content/themes/efrontlearning-website/dist/images/homepage/icons/quote.svg" alt="quote">
+            </div>
+            <div class="customer-result__desc">
+            eFront’s professional services team were able to provide extensive cosmetic and functional changes to make a tight integration with our supporting website.                </div>
+            <div class="customer-result__brand  ">
+              <img src="/wp-content/themes/efrontlearning-website/dist/images/logos/iep.png" alt="IEP - eFront customer testimonials">
+            </div>
+            <div class="customer-result__author">
+            Gregory Short                </div>
+            <div class="customer-result__position">
+            President at IEP                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 text-center customers-results-more">
+        <a class="btn__default btn__default--white-blue btn__default--rounded-5 btn__default--auto btn__default--medium-x font-weight-600 " title="Customer testimonials - eFront" href="/customers">
+          Read our customer stories
+        </a>
+      </div>
+    </div>
+    
+  </div>
+</div><div class="footer-strip">
+ <div class="row">
+      <div class="col-md-12">
+          <div>
+              <h2>
+                See how eFront will work in your organization
+              </h2>
+              <div class="subheading">
+                Schedule a demo
+              </div>
+          </div>
+          <div class="try-row">
+              <form action="/demo" accept-charset="UTF-8" class="form-inline" method="get">
+                  <div class="form-group">
+                      <label for="try-form" class="sr-only">Email: </label>
+                      <input type="email"
+                            name="contact_email_strip"
+                            class="form-control input-lg try-email-input"
+                            placeholder="Enter work email"
+                            pattern=".+@(?!gmail\.)(?!yahoo\.)(?!hotmail\.)([\w+\.-])+\w+"
+                            title="Please enter a business email address"
+                            oninvalid="this.setCustomValidity(Please enter a business email address)"
+                            oninput="setCustomValidity('')"
+                            required="required" >
+                  </div>
+                  <input type="submit" value="Schedule demo" class="btn btn-lg btn-primary try-email-input">
+              </form>
+          </div>
+          <div class="try-row live-demo">... or <a href="/tryit" title="Try eFront LMS for free">try it for free now</a> </div>
+      </div>
+  </div>
+</div>
+<div class="content-wrapper header">
+
+	<div class="footer">
+
+		<div class="footer-sections-container">
+			<div class="footer-logo">
+				<img src="https://www.efrontlearning.com/wp-content/themes/efrontlearning-website/dist/images/efront_logo_grayscale_1.svg" alt="Efront logo grayscale">
+			</div>
+			<div class="footer-sections">
+
+				<div class="footer-section">
+					<div class="footer-section-title">
+						More about eFront					</div>
+					<div class="footer-section-links">
+													<div class="footer-section-link">
+								<a href="/features" target="" >
+									Key features								</a>
+							</div>
+													<div class="footer-section-link">
+								<a href="/customizations" target="" >
+									Customizations								</a>
+							</div>
+													<div class="footer-section-link">
+								<a href="/mobile" target="" >
+									Mobile								</a>
+							</div>
+													<div class="footer-section-link">
+								<a href="/customers" target="" >
+									Customer Stories								</a>
+							</div>
+													<div class="footer-section-link">
+								<a href="/integrations" target="" >
+									Integrations								</a>
+							</div>
+													<div class="footer-section-link">
+								<a href="/partners" target="" >
+									Partners								</a>
+							</div>
+													<div class="footer-section-link">
+								<a href="/content" target="" >
+									Content								</a>
+							</div>
+											</div>
+				</div>
+
+				<div class="footer-section">
+					<div class="footer-section-title">
+						Resources					</div>
+					<div class="footer-section-links">
+													<div class="footer-section-link">
+								<a href="/solutions" target="" >
+									Solutions								</a>
+							</div>
+													<div class="footer-section-link">
+								<a href="/industries" target="" >
+									Industries								</a>
+							</div>
+													<div class="footer-section-link">
+								<a href="https://support.efrontlearning.com/hc/en-us" target="" >
+									Knowledge base								</a>
+							</div>
+													<div class="footer-section-link">
+								<a href="/blog/" target="" >
+									eFront blog								</a>
+							</div>
+											</div>
+				</div>
+
+				<div class="footer-section">
+					<div class="footer-section-title">
+						About us					</div>
+					<div class="footer-section-links">
+													<div class="footer-section-link">
+								<a href="/about" target="" >
+									Who we are								</a>
+							</div>
+													<div class="footer-section-link">
+								<a href="/privacy" target="" >
+									Privacy policy								</a>
+							</div>
+													<div class="footer-section-link">
+								<a href="/terms" target="" >
+									Terms & conditions								</a>
+							</div>
+											</div>
+				</div>
+
+				<div class="footer-section">
+					<div class="footer-section-title">
+						Get in touch					</div>
+					<div class="footer-section-links">
+													<div class="footer-section-link">
+								<a href="/contact" target="" >
+									Contact us								</a>
+							</div>
+													<div class="footer-section-link">
+								<a href="/demo" target="" >
+									Schedule a demo								</a>
+							</div>
+											</div>
+				</div>
+			</div>
+		</div>
+		<!-- end of .footer-sections-container -->
+
+		<hr>
+
+		<div class="row copyright">
+			<div class="col-md-3 hidden-xs hidden-sm">
+				<div>
+					<span class="ef-license">© <a href="https://www.epignosishq.com" target="_blank">Epignosis</a>. All rights reserved.</span>
+				</div>
+			</div>
+			<div class="col-md-6 col-md-offset-2 col-sm-12 col-xs-12 social-icons-alignment">
+				<a href="https://facebook.com/eFront/" class="social-button" target="_blank">
+					<svg class="social-object" id="fb" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 411 411">
+						<path class="social" d="M300 .5H111C49.9.5.5 49.9.5 111v189c0 61.1 49.4 110.5 110.5 110.5h5.6V288h-24v-40.8h24v-34c0-6.2-.9-47.6 52.3-47.6h37.4v43.2h-27.4c-5.4 0-11 5.6-11 9.8v28.6h38.6c-1.5 21.6-4.7 40.8-4.7 40.8h-33.9v122.5H300c61.1 0 110.5-49.4 110.5-110.5V111C410.5 49.9 361.1.5 300 .5z"></path>
+					</svg>
+				</a>
+				<a href="https://www.linkedin.com/company/efront-learning-management-system/" class="social-button" target="_blank">
+					<svg class="social-object" id="linkedin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 411 411">
+						<path class="social" d="M299.8.3h-189C49.7.3.3 49.7.3 110.8v189c0 61.1 49.4 110.5 110.5 110.5h189c61.1 0 110.5-49.4 110.5-110.5v-189C410.3 49.7 360.9.3 299.8.3zM161.3 283H126V178.1h35.2V283zm-17.9-118.5h-.2c-11.7 0-19.3-8.3-19.3-18.4 0-10.2 7.8-18.2 19.8-18.2 11.9 0 19.3 8 19.4 18.2 0 10.2-7.5 18.4-19.7 18.4zM287 283h-35.2v-55.9c0-14.1-5-23.7-17.7-23.7-9.6 0-15.4 6.5-17.9 12.7-.9 2.2-1.2 5.4-1.2 8.5v58.3h-34.7s.5-94.5 0-104.9H215v15.2c4.8-7.1 13.1-17.4 31.7-17.4 22.9 0 40.3 15 40.3 47.2v60z"></path>
+					</svg>
+				</a>
+				<a href="https://twitter.com/efrontlearning" class="social-button" target="_blank">
+					<svg class="social-object" id="twitter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 411 411">
+						<path class="social" d="M299.8.3h-189C49.7.3.3 49.7.3 110.8v189c0 61.1 49.4 110.5 110.5 110.5h189c61.1 0 110.5-49.4 110.5-110.5v-189C410.3 49.7 360.9.3 299.8.3zm5.3 160.4l.2 6c0 61.7-46.9 132.7-132.7 132.7-26.3 0-50.8-7.8-71.5-21 3.7.4 7.4.6 11.1.6 21.8 0 42-7.4 58-19.9-20.4-.4-37.6-13.9-43.5-32.4 2.9.6 5.8.9 8.8.9 4.3 0 8.3-.6 12.2-1.6-21.3-4.2-37.5-23.1-37.5-45.7v-.6c6.4 3.5 13.6 5.6 21.2 5.8-12.5-8.3-20.7-22.6-20.7-38.8 0-8.6 2.4-16.6 6.4-23.4 23 28.2 57.5 46.8 96.2 48.7-.8-3.4-1.2-7-1.2-10.6 0-25.8 20.9-46.6 46.6-46.6 13.4 0 25.5 5.7 34 14.7 10.6-2.1 20.6-5.9 29.6-11.3-3.5 10.9-10.9 20-20.5 25.8 9.4-1.1 18.4-3.7 26.8-7.4-6.2 9.3-14.2 17.7-23.5 24.1z"></path>
+					</svg>
+				</a>
+				<a href="https://www.youtube.com/efrontlearning" class="social-button" target="_blank">
+					<svg class="social-object" id="youtube" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 411 411">
+						<path class="social" d="M299.8.3h-189C49.7.3.3 49.7.3 110.8v189c0 61.1 49.4 110.5 110.5 110.5h189c61.1 0 110.5-49.4 110.5-110.5v-189C410.3 49.7 360.9.3 299.8.3zm-11.6 284c-6.2 2.1-44.5 4.2-82.9 4.2s-76.7-2.1-82.9-4.2c-16.6-5.2-20.7-41.4-20.7-78.7 0-37.3 4.2-73.5 20.7-78.7 6.2-2.1 44.5-4.2 82.9-4.2s76.7 2.1 82.9 4.2c16.6 5.2 20.7 41.4 20.7 78.7s-4.1 73.5-20.7 78.7z"></path>
+						<path class="social" d="M184.5 252.1l62.2-46.6-62.2-46.5v93.1z"></path>
+					</svg>
+				</a>
+			</div>
+			<div class="hidden-md hidden-lg col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2">
+				<div class="text-center">
+					<span class="ef-license">© <a href="https://www.epignosishq.com" target="_blank">Epignosis</a>. All rights reserved.</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="demoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<div class="footer-strip">
+						<div class="row">
+							<div class="col-md-12">
+								<div id="demo-prepare">
+									<h2>Creating demo site</h2>
+									<p>Please wait while we create a personalized demo account for you</p>
+								</div>
+								<div id="demo-complete" style="display:none">
+									<h2>Complete!</h2>
+									<p>Click the link below to access the demo site we created for you
+										<br>
+										<a id="demo-complete-url" href="" title=""></a>
+									</p>
+								</div>
+								<div id="demo-error" style="display:none">
+									<h2>Oh no!</h2>
+									<p><img src="https://www.efrontlearning.com/wp-content/themes/efrontlearning-website/dist/images/customizations/img_deployment.svg" alt="Img deployment"></p>
+									<p>Something went wrong! Our tech team has been notified and will contact you, but feel free to <a href="javascript:history.go(0)">try again</a> in the meantime!</p>
+								</div>
+								<div id="demo-progress" style="display:none">
+									<div class="progress">
+										<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100" style="width: 1%;">
+											<span>1% Awesome</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</div> <!-- container class -->
+</div> <!-- .container-fluid -->
+<script type="text/javascript" async src="https://www.efrontlearning.com/wp-content/themes/efrontlearning-website/dist/js/main.min.js"></script>
+</body>
+</html>
